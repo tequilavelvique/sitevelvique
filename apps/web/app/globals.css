@@ -1,0 +1,1704 @@
+/*
+ * Velvique tokens. PANTONE.jpeg: blue #4EA9D5 and black. The ground is black with a faint blue haze (the
+ * label's light in the room). Gold is a detail only: short rules, small numerals, seal rings, frames. Always
+ * solid gold (#D4A84A, warm); gold at partial alpha over black turns olive, so it never goes transparent.
+ * Text is white and solid tints of the Pantone blue. Hairlines are solid navy. No grey, no green.
+ */
+:root {
+  --ink: #000000;
+  --ink-raised: #000000;
+  --black: #000000;
+  --bone: #FFFFFF;
+  --bone-soft: #EEF5FA;
+  --body: #E8F1F7;
+  /* Labels and tertiary text: solid tints of the Pantone blue. */
+  --muted: #A9D4EC;
+  --faint: #8CC6E6;
+  --dim: #000000;
+  --paper: #F4F9FC;
+  --paper-ink: #000000;
+  --paper-muted: #1f5f80;
+  /* Pantone HEX #4EA9D5 (C62 M18 Y0 K16). Hover and core are tints of it. */
+  --led: #4ea9d5;
+  --led-hover: #74bce0;
+  --led-core: #ddf0f9;
+  --led-soft: #4ea9d540;
+  /* Hairlines: the Pantone blue at a whisper. */
+  --hairline: #1c2f45;
+  --hairline-strong: #2d4a6b;
+  --led-breath: 5s;
+  --gold: #d4a84a;
+  --gold-soft: #d4a84a;
+  --gold-hairline: #8a6a2c;
+
+  --gutter: clamp(20px, 5vw, 72px);
+  --section: clamp(96px, 14vw, 180px);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--ink);
+}
+body {
+  background:
+    radial-gradient(90% 55% at 50% 0%, rgba(78, 169, 213, 0.05), rgba(78, 169, 213, 0) 70%),
+    radial-gradient(80% 50% at 50% 100%, rgba(78, 169, 213, 0.045), rgba(78, 169, 213, 0) 70%),
+    var(--ink);
+  background-attachment: fixed;
+  color: var(--bone);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-serif), "Bodoni Moda", Didot, "Times New Roman", serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--bone);
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--faint);
+}
+:focus-visible {
+  outline: 1px solid var(--bone);
+  outline-offset: 3px;
+}
+img {
+  max-width: 100%;
+}
+
+@keyframes vq-breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes vq-shine {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -20% 0;
+  }
+}
+
+/* ------------------------------------------------------------------ type */
+
+.cond {
+  font-family: var(--font-cond), "Barlow Condensed", "Arial Narrow", sans-serif;
+}
+.eyebrow {
+  font-family: var(--font-cond), "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.eyebrow--led {
+  color: var(--led);
+}
+.logo {
+  display: inline-block;
+  flex: none;
+  height: 1em;
+  aspect-ratio: 683 / 80;
+  max-width: 100%;
+  background: currentColor;
+  -webkit-mask: url("https://api.grove.storage/a89cc0e11f378cf3792f9c8962713a7f41e9bd45c2cd9b30bf8274d24582b03a") center / contain no-repeat;
+  mask: url("https://api.grove.storage/a89cc0e11f378cf3792f9c8962713a7f41e9bd45c2cd9b30bf8274d24582b03a") center / contain no-repeat;
+}
+.logo--shine {
+  background: linear-gradient(120deg, var(--bone) 40%, var(--led-core) 50%, var(--bone) 60%);
+  background-size: 200% 100%;
+  animation: vq-logo-shine 5s linear 2.5s infinite;
+}
+@keyframes vq-logo-shine {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo--shine {
+    animation: none;
+  }
+}
+.display {
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+.display--xl {
+  font-size: clamp(38px, 7vw, 96px);
+}
+.display--lg {
+  font-size: clamp(40px, 6.4vw, 84px);
+  line-height: 1;
+}
+.display--md {
+  font-size: clamp(40px, 10vw, 64px);
+  line-height: 1;
+}
+.lede {
+  margin: 0;
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.7;
+  color: var(--body);
+  max-width: 30em;
+  text-wrap: pretty;
+}
+.caption-i {
+  font-style: italic;
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.45;
+  color: var(--bone-soft);
+}
+
+/*
+ * Flyer: the condensed grotesk at poster size, for things you would read off a wristband or a door list:
+ * dates, prices, volumes, counts. Tight, heavy, upright; the serif keeps the voice, this keeps the facts.
+ */
+.flyer {
+  margin: 0;
+  font-family: var(--font-cond), "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 0.82;
+  letter-spacing: -0.01em;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--bone);
+}
+.flyer--xl {
+  font-size: clamp(72px, 13vw, 196px);
+}
+.flyer--lg {
+  font-size: clamp(52px, 7.4vw, 112px);
+}
+.flyer--md {
+  font-size: clamp(34px, 4.2vw, 60px);
+}
+.flyer--dim {
+  color: var(--dim);
+  -webkit-text-stroke: 1px var(--hairline-strong);
+}
+
+/* ------------------------------------------------------------------ layout */
+
+.gutter {
+  padding-inline: var(--gutter);
+}
+.section {
+  padding-block: var(--section);
+}
+.wrap {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.wrap--wide {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+.rule-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.rule-row > .line,
+.line {
+  flex: 1;
+  height: 1px;
+  background: var(--hairline);
+}
+.hairline-top {
+  border-top: 1px solid var(--hairline);
+}
+.hit {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.center {
+  text-align: center;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ controls */
+
+.btn {
+  min-height: 56px;
+  padding: 0 36px;
+  border: 1px solid var(--hairline-strong);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s, opacity 0.2s;
+}
+.btn:hover {
+  border-color: var(--bone);
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/* The one blue active state per screen. */
+.btn--led {
+  padding: 0 44px;
+  border: 0;
+  background: var(--led);
+  color: #000;
+  box-shadow: 0 0 32px #4EA9D540;
+}
+.btn--led:hover {
+  background: var(--led-hover);
+  color: #000;
+}
+.btn--bone {
+  padding: 0 44px;
+  border: 0;
+  background: var(--bone);
+  color: var(--ink);
+}
+.btn--bone:hover {
+  background: #fff;
+  color: var(--ink);
+}
+.btn--block {
+  width: 100%;
+}
+
+/* The header clock steps out on the narrowest phones so menu, logo and language never collide. */
+@media (max-width: 419px) {
+  .header-clock {
+    display: none;
+  }
+}
+
+/* The deck's short gold bar under a heading, at hairline weight. */
+.gold-rule {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold-soft);
+  border: 0;
+  margin: 0;
+}
+.gold-rule.center {
+  margin-inline: auto;
+}
+.hairline-gold {
+  border-top: 1px solid var(--gold-hairline);
+}
+.gold-num {
+  color: var(--gold-soft);
+}
+
+.lang-btn {
+  min-height: 44px;
+  min-width: 30px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--faint);
+}
+.lang-btn[aria-pressed="true"] {
+  color: var(--bone);
+}
+
+.pill {
+  min-height: 44px;
+  padding: 0 18px;
+  background: transparent;
+  color: var(--bone);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 999px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+}
+.pill[aria-pressed="true"],
+.pill[aria-selected="true"],
+.pill[aria-checked="true"] {
+  background: var(--bone);
+  color: #000;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.field input,
+.field select,
+.field textarea {
+  min-height: 52px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--hairline-strong);
+  color: var(--bone);
+  padding: 0 2px;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  outline: none;
+  border-radius: 0;
+}
+.field textarea {
+  min-height: 96px;
+  padding-top: 12px;
+  resize: vertical;
+}
+.field select option {
+  background: var(--ink);
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-bottom-color: var(--bone);
+}
+.field--code input {
+  min-height: 56px;
+  font-size: 22px;
+  letter-spacing: 0.2em;
+}
+
+/* ------------------------------------------------------------------ objects */
+
+/* Found objects: paper, wristband, receipt. */
+.paper {
+  background: var(--bone);
+  color: var(--paper-ink);
+  box-shadow: 0 30px 60px #000000a0;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+}
+.paper--receipt {
+  background: var(--paper);
+}
+
+.card {
+  border: 1px solid var(--hairline);
+  padding: 28px 24px;
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--hairline);
+}
+.kv > div {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.kv > div:nth-child(odd) {
+  padding-right: 16px;
+  border-right: 1px solid var(--hairline);
+}
+.kv > div:nth-child(even) {
+  padding-left: 20px;
+}
+.kv .v {
+  font-size: 18px;
+}
+
+/* Two-beat caption meme overlay, from the client's IG images. */
+.meme {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: clamp(15px, 2.4vw, 19px);
+  letter-spacing: 0.04em;
+}
+.meme > span {
+  background: var(--ink);
+  padding: 4px 10px;
+  width: fit-content;
+}
+
+/* LED glow: a candle, not neon. */
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(78, 169, 213, 0.5) 0%, rgba(78, 169, 213, 0.16) 34%, rgba(78, 169, 213, 0) 68%);
+  animation: vq-breathe var(--led-breath) ease-in-out infinite;
+}
+
+/*
+ * Bottle loading: the label's light holds the space at once (no layout shift, no spinner), then the glass
+ * resolves around it as the scene's first frame lands.
+ */
+.bottle-canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(0.985);
+  transition:
+    opacity 1.2s cubic-bezier(0.22, 0.6, 0.36, 1),
+    transform 1.6s cubic-bezier(0.22, 0.6, 0.36, 1);
+}
+
+.bottle-canvas[data-ready] {
+  opacity: 1;
+  transform: none;
+}
+
+.bottle-pending {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+/* vq-breathe owns this layer's opacity and centering transform; the parent owns the fade-out. */
+.bottle-pending::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: min(34vw, 220px);
+  aspect-ratio: 1.5;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(221, 240, 249, 0.5), rgba(78, 169, 213, 0.28) 38%, rgba(78, 169, 213, 0) 100%);
+  filter: blur(6px);
+  animation: vq-breathe var(--led-breath) ease-in-out infinite;
+}
+
+.bottle-pending[data-ready] {
+  opacity: 0;
+}
+
+/*
+ * Hero dive: the inside of the bottle. `--iris` (set on the hero stage by GSAP) opens a soft-edged aperture
+ * from the label outward; the rim is the glass wall catching light as the lens passes through it.
+ */
+@property --iris {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+.hero-inside,
+.hero-rim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hero-inside {
+  z-index: 2;
+  overflow: hidden;
+  background: radial-gradient(130% 90% at 50% 50%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.55) 100%), var(--ink);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 calc(var(--iris) - 10%), transparent var(--iris));
+  mask-image: radial-gradient(circle at 50% 50%, #000 calc(var(--iris) - 10%), transparent var(--iris));
+}
+
+.hero-rim {
+  z-index: 3;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(221, 240, 249, 0) calc(var(--iris) - 9%),
+    rgba(221, 240, 249, 0.16) calc(var(--iris) - 4%),
+    rgba(78, 169, 213, 0.06) calc(var(--iris) - 1%),
+    rgba(221, 240, 249, 0) var(--iris)
+  );
+}
+
+/* The first photo of the night, full bleed inside the iris; GSAP scales it from close to the frame. */
+.hero-inside__photo {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+.hero-inside__meme {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(clamp(24px, 6vh, 64px) + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Evidencia's photo opens inside the hero's iris; this static block exists only for reduced motion. */
+.section.evidencia-still {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .section.evidencia-still {
+    display: flex;
+  }
+}
+
+/*
+ * Refraction: two offset sets of soft vertical bands, the glass wall's curvature seen through the añejo.
+ * Softness is in the gradient stops, not a filter: no blur or blend pass on a full-screen layer that moves
+ * every scroll frame (the cost that drops phones below 60 fps). Bands are sized in vmax so a phone shows
+ * a few wide bands, not a barcode.
+ */
+.hero-inside__glass {
+  position: absolute;
+  inset: -25% -5%;
+  will-change: transform;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(78, 169, 213, 0) 0,
+      rgba(78, 169, 213, 0) 4vmax,
+      rgba(78, 169, 213, 0) 8vmax
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(221, 240, 249, 0) 0,
+      rgba(221, 240, 249, 0) 6.5vmax,
+      rgba(221, 240, 249, 0) 13vmax
+    );
+}
+
+/*
+ * Through the liquid. `--depth` (0..1, scrubbed by NightSection) is how far under the añejo a photo still is:
+ * an ink veil over it, so the "coming into focus" costs one composited layer, not a per-frame filter.
+ */
+@property --depth {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+[data-depth] {
+  position: relative;
+}
+
+[data-depth]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.55), var(--ink) 85%);
+  opacity: var(--depth);
+}
+
+/*
+ * The inside of the bottle, held behind the whole night once the hero dive lands: the same refraction as the
+ * hero's interior, fixed, drifting slower than the page so content reads as floating past you in liquid.
+ */
+.night-liquid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.night-liquid::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  width: min(160vw, 1600px);
+  aspect-ratio: 1.6;
+  margin-left: calc(min(160vw, 1600px) / -2);
+  background: radial-gradient(closest-side, rgba(78, 169, 213, 0.08), rgba(78, 169, 213, 0) 50%, rgba(78, 169, 213, 0) 100%);
+}
+
+/*
+ * Hero stage, mobile first. Exactly one viewport tall (svh: the address bar never resizes it mid-pin), so the
+ * pinned dive is always centered on the screen. The canvas covers the whole stage behind the type.
+ */
+.hero-stage {
+  position: relative;
+  height: 100svh;
+  min-height: 560px;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding-top: 76px;
+  padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  overflow: hidden;
+}
+
+.hero-bottle {
+  position: absolute;
+  inset: 0;
+}
+
+/* Two rows on a phone (line on top, kind and pronunciation underneath), one row of three from tablet up. */
+.hero-foot {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "cap cap"
+    "kind say";
+  gap: 12px 16px;
+  align-items: end;
+  padding-top: 16px;
+}
+
+.hero-foot__cap {
+  grid-area: cap;
+}
+
+.hero-foot__kind {
+  grid-area: kind;
+}
+
+.hero-foot__say {
+  grid-area: say;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .hero-stage {
+    padding-top: 84px;
+    padding-bottom: 32px;
+  }
+
+  .hero-foot {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "kind cap say";
+    gap: 20px;
+    padding-top: 22px;
+  }
+}
+
+.shiny {
+  background: linear-gradient(100deg, var(--bone) 40%, var(--led-core) 50%, var(--bone) 60%) 0 0 / 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: vq-shine 7s linear infinite;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow,
+  .shiny {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------ the witness (La evidencia, IV) */
+/* Warm ivory light, never blue: blue stays the bottle's. The light source sits behind the head (--src-x / --src-y). */
+
+.revelation-wrap {
+  grid-column: 1 / -1;
+  position: relative;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-block: clamp(56px, 9vw, 140px) 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.revelation {
+  --src-x: 53%;
+  --src-y: 15%;
+  position: relative;
+  width: min(86vw, 620px);
+  aspect-ratio: 1;
+  isolation: isolate;
+  animation: vq-float 9s ease-in-out infinite;
+}
+.revelation__aura {
+  position: absolute;
+  inset: -35%;
+  z-index: -3;
+  background: radial-gradient(
+    closest-side at var(--src-x) calc(var(--src-y) + 20%),
+    rgba(221, 240, 249, 0.42),
+    rgba(221, 240, 249, 0.14) 48%,
+    transparent 78%
+  );
+  animation: vq-aura 6s ease-in-out infinite;
+}
+.revelation__rays {
+  position: absolute;
+  left: var(--src-x);
+  top: var(--src-y);
+  width: 260%;
+  aspect-ratio: 1;
+  z-index: -2;
+  translate: -50% -50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(221, 240, 249, 0) 0deg 4deg,
+    rgba(221, 240, 249, 0.34) 6deg,
+    rgba(221, 240, 249, 0) 9deg 15deg
+  );
+  -webkit-mask-image: radial-gradient(closest-side, #000 6%, rgba(0, 0, 0, 0.55) 34%, transparent 70%);
+  mask-image: radial-gradient(closest-side, #000 6%, rgba(0, 0, 0, 0.55) 34%, transparent 70%);
+  mix-blend-mode: screen;
+  animation: vq-rays 120s linear infinite;
+}
+.revelation__rays--counter {
+  background: repeating-conic-gradient(
+    from 7deg,
+    rgba(221, 240, 249, 0) 0deg 9deg,
+    rgba(221, 240, 249, 0.22) 11deg,
+    rgba(221, 240, 249, 0) 13deg 23deg
+  );
+  animation: vq-rays 180s linear infinite reverse;
+}
+.revelation__halo {
+  position: absolute;
+  left: var(--src-x);
+  top: var(--src-y);
+  width: 36%;
+  aspect-ratio: 1;
+  z-index: -1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(240, 248, 252, 0.95) 0 22%,
+    rgba(221, 240, 249, 0.55) 42%,
+    rgba(221, 240, 249, 0.12) 62%,
+    transparent 72%
+  );
+  box-shadow: 0 0 90px 36px rgba(221, 240, 249, 0.28);
+  animation: vq-halo 5s ease-in-out infinite;
+}
+.revelation__halo::after {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(221, 240, 249, 0.75);
+  box-shadow: 0 0 18px rgba(221, 240, 249, 0.6), inset 0 0 18px rgba(221, 240, 249, 0.45);
+}
+.revelation__figure {
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(221, 240, 249, 0.55)) drop-shadow(0 0 60px rgba(221, 240, 249, 0.28));
+}
+
+@keyframes vq-rays {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes vq-halo {
+  0%,
+  100% {
+    opacity: 0.82;
+    scale: 0.97;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.03;
+  }
+}
+@keyframes vq-aura {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes vq-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revelation,
+  .revelation__aura,
+  .revelation__rays,
+  .revelation__halo {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------ journal markdown */
+
+.md {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  font-size: clamp(18px, 1.5vw, 21px);
+  line-height: 1.75;
+  color: var(--bone-soft);
+  max-width: 38em;
+}
+.md p,
+.md ul,
+.md ol,
+.md figure,
+.md blockquote {
+  margin: 0;
+}
+.md h2,
+.md h3,
+.md h4 {
+  margin: 0.6em 0 0;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--bone);
+  line-height: 1.1;
+}
+.md h2 {
+  font-size: clamp(30px, 3.4vw, 44px);
+}
+.md h3 {
+  font-size: clamp(24px, 2.6vw, 32px);
+}
+.md h4 {
+  font-family: var(--font-cond), sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.md blockquote {
+  border-left: 1px solid var(--gold-soft);
+  padding-left: 1.2em;
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--bone);
+}
+.md ul,
+.md ol {
+  padding-left: 1.2em;
+}
+.md hr {
+  border: 0;
+  height: 1px;
+  background: var(--hairline);
+  width: 100%;
+}
+.md figure .vq-flash {
+  height: auto;
+}
+.md figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.md figure figcaption {
+  padding-top: 10px;
+}
+.md-link {
+  border-bottom: 1px solid var(--hairline-strong);
+}
+.md-link:hover {
+  border-bottom-color: var(--bone);
+}
+.md-meme {
+  position: static;
+}
+/* Photo essays: consecutive image lines become a two-up grid that breaks out of the text column. */
+.md-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+  width: min(100%, 860px);
+}
+.md-gallery figure {
+  margin: 0;
+}
+.md-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Journal rows: text left, a small photo right; text-only when the post has no photo. */
+.post-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(16px, 3vw, 40px);
+  align-items: center;
+  padding-block: 26px;
+}
+.post-row__title {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.12;
+}
+.post-row__excerpt {
+  font-size: 16px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-row__thumb {
+  position: relative;
+  display: block;
+  width: clamp(88px, 22vw, 200px);
+  aspect-ratio: 1;
+}
+.post-row:hover .post-row__title {
+  color: var(--bone);
+  text-decoration: underline;
+  text-decoration-color: var(--gold-hairline);
+  text-underline-offset: 0.18em;
+}
+/* ------------------------------------------------------------------ membership pass */
+
+.pass-stage {
+  perspective: 1100px;
+  width: 100%;
+  max-width: 520px;
+  justify-self: center;
+}
+.pass {
+  --rx: 0deg;
+  --ry: 0deg;
+  --gx: 50%;
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 1.586 / 1;
+  padding: clamp(18px, 3.4vw, 28px) clamp(20px, 3.6vw, 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 14px;
+  /* Ribs like the bottle's facets, under a soft highlight that follows the pointer. */
+  background:
+    radial-gradient(90% 120% at var(--gx) -10%, rgba(78, 169, 213, 0.12), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(78,169,213, 0.05) 0 1px, transparent 1px 14px),
+    var(--black);
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(78,169,213, 0.18);
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.6s cubic-bezier(0.22, 0.6, 0.36, 1);
+}
+/* Hairline gold frame, inset like a deboss. */
+.pass::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px solid var(--gold-hairline);
+  border-radius: 9px;
+  pointer-events: none;
+}
+/* The sheen: a slow diagonal pass of light, like the label's glow grazing the card. */
+.pass::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 44%, rgba(221, 240, 249, 0.06) 50%, transparent 56%);
+  animation: vq-pass-sheen 7s ease-in-out 1.5s infinite;
+}
+/* Opacity-only breathing for things that sit in normal flow (vq-breathe also centers absolutely positioned glows). */
+@keyframes vq-glow-breathe {
+  0%,
+  100% {
+    opacity: 0.72;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes vq-pass-sheen {
+  0% {
+    transform: translateX(-40%);
+  }
+  55%,
+  100% {
+    transform: translateX(40%);
+  }
+}
+.pass__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  min-width: 0;
+}
+.pass__row > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pass__foot {
+  font-size: clamp(10px, 1.6vw, 12px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pass__foot > span:first-child {
+  color: var(--bone-soft);
+}
+.pass__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--led-core);
+  filter: drop-shadow(0 0 10px rgba(78, 169, 213, 0.45));
+  animation: vq-glow-breathe var(--led-breath) ease-in-out infinite;
+}
+.pass--preview .pass__foot > span:first-child {
+  color: var(--faint);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pass,
+  .pass::after,
+  .pass__logo {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* "Opening soon": a gold pulse, so the blue stays the card's alone. */
+.soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold-soft);
+}
+.soon-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  animation: vq-glow-breathe var(--led-breath) ease-in-out infinite;
+}
+
+.perks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(22px, 3vw, 40px);
+}
+
+/* The serial card under the bottle, drawn in paper and ink so people know what to look for. */
+.serial-card {
+  justify-self: center;
+  width: min(100%, 440px);
+  aspect-ratio: 1.6 / 1;
+  padding: clamp(20px, 4vw, 34px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--paper-ink);
+  transform: rotate(-2deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+.serial-card__rule {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+.serial-card__label {
+  color: var(--paper-muted);
+}
+.serial-card__num {
+  font-family: var(--font-cond), sans-serif;
+  font-size: clamp(20px, 3vw, 28px);
+  letter-spacing: 0.22em;
+  font-variant-numeric: tabular-nums;
+}
+.serial-card__foot {
+  color: var(--paper-muted);
+  letter-spacing: 0.2em;
+  text-transform: none;
+}
+
+/* "La botella en tu mesa": a viewer short enough that its controls stay on screen. */
+.ar-stage {
+  position: relative;
+  width: 100%;
+  height: min(64svh, 620px);
+  min-height: 380px;
+  background: radial-gradient(60% 55% at 50% 60%, #062231 0%, var(--ink) 72%);
+  border: 1px solid var(--hairline);
+}
+.ar-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ar-rec {
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--bone);
+}
+.ar-rec::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e5484d;
+  animation: vq-glow-breathe 1.2s ease-in-out infinite;
+}
+
+/* Plain-language FAQ: native details/summary, no script. */
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 18px;
+  font-size: clamp(18px, 1.8vw, 21px);
+  color: var(--bone);
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary::after {
+  content: "+";
+  color: var(--gold-soft);
+  font-family: var(--font-cond), sans-serif;
+}
+.faq[open] summary::after {
+  content: "\2212";
+}
+.faq p {
+  padding-bottom: 18px;
+  max-width: 40em;
+}
+
+.share-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--bone);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-cond), sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--bone);
+  border: 1px solid var(--hairline-strong);
+  padding: 4px 9px;
+}
+.badge--members::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bone);
+}
+
+.line--svg {
+  background: none;
+  height: 2px;
+  overflow: visible;
+}
+
+/* ------------------------------------------------------------------ the after table (home III) */
+/* Copy on the left reads like a contact sheet note; the pile sits right, slightly off the grid, like it was dropped. */
+
+.after-table {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(56px, 8vw, 120px);
+  align-items: center;
+  padding-top: clamp(48px, 7vw, 96px);
+}
+.after-table__copy {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 36px);
+  max-width: 34rem;
+}
+.after-table__frame {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--gold-hairline);
+}
+.after-table__frame .flyer--xl {
+  margin-bottom: -0.08em;
+}
+.after-table__pile {
+  justify-self: center;
+  width: min(74vw, 420px);
+  aspect-ratio: 3 / 4;
+  margin-block: 24px 48px;
+}
+@media (min-width: 900px) {
+  .after-table {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  }
+  .after-table__pile {
+    justify-self: end;
+    margin-right: clamp(24px, 6vw, 110px);
+    transform: translateY(4%);
+  }
+}
+
+/* ------------------------------------------------------------------ slab internals */
+
+/* A slab's first line: what it is on the left, a fact on the right. */
+.slab-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--hairline);
+}
+.slab-title {
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.02;
+  font-size: clamp(30px, 3.4vw, 46px);
+  text-wrap: balance;
+}
+
+/*
+ * A list read under one moving light: rows of a door list, a menu, a tasting card. One slab, hairlines between
+ * rows, a large serif name and a short plain line.
+ */
+.lit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lit-list > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px 40px;
+  padding-block: clamp(22px, 2.6vw, 34px);
+  border-top: 1px solid var(--hairline);
+}
+.lit-list > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.lit-list > li:last-child {
+  padding-bottom: 0;
+}
+.lit-list__name {
+  font-style: italic;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.05;
+  color: var(--bone);
+}
+.lit-list__line {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--body);
+  max-width: 34em;
+}
+@media (min-width: 760px) {
+  .lit-list > li {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: baseline;
+  }
+}
+
+/* ------------------------------------------------------------------ night flyer (events) */
+
+.night-flyer {
+  display: block;
+  color: var(--bone);
+}
+.night-flyer:hover {
+  color: var(--bone);
+}
+.night-flyer__grid {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "date poster"
+    "copy copy";
+  gap: clamp(20px, 3vw, 44px);
+  align-items: start;
+}
+.night-flyer__date {
+  grid-area: date;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.night-flyer__poster {
+  grid-area: poster;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-height: 420px;
+}
+.night-flyer__blank {
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--hairline);
+  background: radial-gradient(70% 60% at 50% 40%, rgba(78, 169, 213, 0), rgba(78, 169, 213, 0) 70%), var(--black);
+}
+.night-flyer__copy {
+  grid-area: copy;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.night-flyer__where {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+}
+.night-flyer__see {
+  color: var(--bone);
+  border-bottom: 1px solid var(--hairline-strong);
+  padding-bottom: 2px;
+}
+.night-flyer:hover .night-flyer__see,
+.night-flyer:focus-visible .night-flyer__see {
+  border-bottom-color: var(--bone);
+}
+@media (min-width: 900px) {
+  .night-flyer__grid {
+    grid-template-columns: auto minmax(0, 4fr) minmax(0, 5fr);
+    grid-template-areas: "date poster copy";
+    align-items: stretch;
+  }
+  .night-flyer__copy {
+    justify-content: flex-end;
+  }
+}
+
+/* Past nights: one row each under the slab's light, date in flyer type, the name in the serif. */
+.lit-list > li:has(> .past-night) {
+  display: block;
+}
+.past-night {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px 32px;
+  align-items: baseline;
+  color: var(--bone);
+}
+.past-night .flyer {
+  color: var(--gold-soft);
+}
+.past-night:hover .lit-list__name {
+  color: #fff;
+}
+@media (min-width: 760px) {
+  .past-night {
+    grid-template-columns: 9rem minmax(0, 1fr) auto;
+  }
+}
+
+/* ------------------------------------------------------------------ members */
+
+/* Two doors, not two equal boxes: the main door wide, the side door narrow and set lower. */
+.doors {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 36px);
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .doors {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  }
+  .doors__side {
+    margin-top: clamp(56px, 8vw, 120px);
+  }
+}
+
+/* The pass hangs on the left, full height; the pitch and the stamp sit low on the right. */
+.pass-show {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: end;
+}
+.pass-show__hang {
+  margin-inline: calc(var(--gutter) * -1);
+}
+.pass-show__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-bottom: clamp(0px, 4vw, 64px);
+}
+@media (min-width: 900px) {
+  .pass-show {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+  .pass-show__hang {
+    margin-inline: calc(var(--gutter) * -1) 0;
+  }
+}
+
+/* A date set on a poster in relief (TiltedCard overlay): bottom left, flyer type, a black shadow so it holds on any photo. */
+.poster-date {
+  position: absolute;
+  left: clamp(14px, 3vw, 26px);
+  bottom: clamp(14px, 3vw, 26px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
+}
+
+/* ------------------------------------------------------------------ store shelf */
+/* The first bottle stands taller and wider; the rest follow at shelf height. */
+
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(24px, 3.4vw, 44px);
+  align-items: start;
+}
+@media (min-width: 1000px) {
+  .shelf > .shelf__item:first-child:not(:only-child) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .shelf > .shelf__item:first-child:not(:only-child) .shelf__photo {
+    aspect-ratio: 4 / 3;
+  }
+}
+.shelf__photo {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  margin: calc(clamp(26px, 3.6vw, 48px) * -1) calc(clamp(26px, 3.6vw, 48px) * -1) 8px;
+  border-bottom: 1px solid var(--hairline);
+}
+.shelf__seal {
+  position: absolute;
+  right: 16px;
+  bottom: -40px;
+  z-index: 4;
+  background: var(--ink);
+}
+.shelf__facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  padding-block: 18px;
+  border-block: 1px solid var(--hairline);
+}
+
+/* ------------------------------------------------------------------ wholesale offer */
+/* The pitch on the left, the deck dealing itself on the right (React Bits CardSwap). */
+
+.offer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+  padding-top: 48px;
+  border-top: 1px solid var(--hairline);
+}
+.offer__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 1000px) {
+  .offer {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  }
+}
+
+/* ------------------------------------------------------------------ la botella */
+
+.seals {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: clamp(36px, 5vw, 72px);
+}
+.seals > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+/* Three serves, stepped down like glasses set along a bar. */
+.rituals {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(18px, 2.4vw, 28px);
+}
+@media (min-width: 900px) {
+  .rituals {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+  .rituals > :nth-child(2) {
+    margin-top: 48px;
+  }
+  .rituals > :nth-child(3) {
+    margin-top: 96px;
+  }
+}
+
+/* The story: chapters alternate text and evidence, the way a night alternates talk and the floor. */
+.story {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(72px, 10vw, 140px);
+}
+.story-ch {
+  display: grid;
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+}
+.story-ch__text {
+  max-width: 34em;
+}
+/* Phone video is vertical: a narrow column keeps it from towering over the text. */
+.story-ch__media {
+  justify-self: center;
+  width: min(100%, 380px);
+}
+.story-ch__media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 478 / 850;
+  object-fit: cover;
+  background: #000;
+  border: 1px solid var(--hairline);
+}
+@media (min-width: 900px) {
+  .story-ch:has(.story-ch__media) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+  .story-ch:nth-child(even):has(.story-ch__media) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+  .story-ch:nth-child(even) .story-ch__media {
+    order: -1;
+  }
+}
+
+.subscribe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+/* Wholesale terms: three cards, the middle one set lower. */
+.terms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  align-items: start;
+}
+@media (min-width: 1000px) {
+  .terms > :nth-child(2) {
+    margin-top: 56px;
+  }
+}
+/* A numbered step in a lit list: the numeral in flyer type, then the step. Only for real sequences. */
+.lit-list > li.step {
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  align-items: start;
+}
+
+/* A lede that sits in a lights-out section: full white, so it holds while the room dims around it. */
+.lede--lit,
+.lede.lede--lit {
+  color: #fff;
+}

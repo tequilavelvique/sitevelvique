@@ -1,0 +1,326 @@
+/*
+ * Brand overrides for vendored React Bits. Upstream CSS stays untouched; everything here is scoped
+ * under our wrapper classes so the generic upstream class names (.menu, .list, .scroller…) never leak.
+ */
+
+/* Noise: fixed film grain over every route */
+.vq-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.08;
+  overflow: hidden;
+}
+.vq-grain .noise-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* BlurText: upstream renders a flex <p>; keep our type */
+.vq-blurtext > p {
+  margin: 0;
+}
+
+/* ScrollVelocity: caption-meme ticker */
+.vq-ticker {
+  border-block: 1px solid var(--hairline);
+  padding-block: 18px;
+  overflow: hidden;
+}
+.vq-ticker .scroller {
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: clamp(18px, 2.6vw, 28px);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  filter: none;
+  color: var(--bone);
+}
+.vq-ticker__text {
+  padding-right: 2.5em;
+}
+
+/* FlowingMenu: full-screen menu rows */
+.vq-flowing .menu-wrap {
+  background: transparent;
+}
+.vq-flowing .menu__item {
+  border-color: var(--hairline) !important;
+}
+.vq-flowing .menu__item-link {
+  font-family: var(--font-serif), serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  font-size: clamp(34px, 7.5vh, 68px);
+  letter-spacing: 0;
+}
+.vq-flowing .marquee span {
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-size: clamp(26px, 5.5vh, 50px);
+}
+.vq-flowing .marquee__img {
+  border-radius: 0;
+  height: 6.5vh;
+  width: 150px;
+  filter: contrast(1.1);
+}
+
+/* Masonry: flash archive */
+.vq-masonry .list {
+  min-height: 60svh;
+}
+.vq-masonry .item-wrapper > .item-img {
+  border-radius: 0;
+  box-shadow: 0 30px 60px #000000a0;
+  background-color: var(--ink-raised);
+}
+
+/* ScrollReveal: ledes */
+.vq-reveal {
+  margin: 0;
+  font-weight: 400;
+}
+.vq-reveal__text {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(26px, 3.6vw, 48px);
+  line-height: 1.25;
+  color: var(--bone-soft);
+  text-wrap: balance;
+}
+
+/* ShinyText: the motion value drives the sweep; drop upstream's competing CSS keyframe */
+.vq-shiny.shiny-text {
+  animation: none;
+}
+
+/*
+ * SpotlightCard: the house slab. Square lacquer, hairline edge, the beam does the rest.
+ * Upstream ships 1.5rem radius and #111; Velvique is true black, corners are cut, never rounded.
+ */
+.vq-slab.spotlight-card {
+  --spotlight-card-surface: var(--black);
+  --spotlight-card-border: var(--hairline);
+  --spotlight-card-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+  padding: clamp(24px, 3.4vw, 44px);
+}
+.vq-slab > :not(span[aria-hidden]) {
+  position: relative;
+}
+
+/* Stack: flash prints on the table */
+.vq-prints {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.vq-prints .stack {
+  color: var(--bone);
+}
+.vq-prints .stack-card-face {
+  box-shadow:
+    0 30px 60px -18px rgba(0, 0, 0, 0.85),
+    0 4px 10px rgba(0, 0, 0, 0.4) !important;
+}
+.vq-prints .stack-card-content {
+  background: var(--ink-raised);
+}
+.vq-prints .stack-card-content > * {
+  position: absolute;
+  inset: 0;
+}
+
+/* GlareHover: the flash must cross the photo, not hide under it */
+.vq-flash.glare-hover {
+  display: block;
+  place-items: initial;
+}
+.vq-flash.glare-hover::before {
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+@media (prefers-reduced-motion: reduce) {
+  .vq-flash.glare-hover::before {
+    display: none;
+  }
+}
+
+/* CircularText: an ink stamp */
+.vq-seal {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.vq-seal::before,
+.vq-seal::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.vq-seal::before {
+  inset: 0;
+  border: 1px solid var(--gold-hairline);
+}
+.vq-seal::after {
+  inset: 22%;
+  border: 1px solid var(--hairline);
+}
+.vq-seal__ring {
+  position: absolute;
+  inset: 7%;
+}
+.vq-seal .circular-text {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: var(--bone-soft);
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  cursor: default;
+}
+.vq-seal .circular-text span {
+  font-size: var(--seal-fs, 11px);
+  letter-spacing: 0;
+  line-height: 1;
+}
+.vq-seal--ink .circular-text {
+  color: var(--paper-ink);
+}
+.vq-seal--ink::before {
+  border-color: rgba(21, 20, 25, 0.35);
+}
+.vq-seal--ink::after {
+  border-color: rgba(21, 20, 25, 0.18);
+}
+.vq-seal__mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+/* BorderGlow: the house card. Black, square, gold hairline at rest; blue and gold run the edge near your hand. */
+.vq-edge.border-glow-card {
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 40px 90px -40px rgba(0, 0, 0, 1);
+}
+.vq-edge > .border-glow-inner {
+  padding: clamp(26px, 3.6vw, 48px);
+  gap: 18px;
+  height: 100%;
+}
+
+/* TiltedCard: posters and covers. Square corners, ivory caption tag on black type, never white-on-grey. */
+.vq-poster {
+  position: relative;
+  width: 100%;
+}
+.vq-poster .tilted-card-figure {
+  margin: 0;
+}
+.vq-poster .tilted-card-inner {
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 1);
+  outline: 1px solid var(--hairline-strong);
+}
+.vq-poster .tilted-card-img {
+  border-radius: 0;
+}
+.vq-poster .tilted-card-overlay {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.vq-poster .tilted-card-inner {
+  background: var(--ink-raised);
+}
+.vq-poster .tilted-card-caption {
+  border-radius: 0;
+  background-color: var(--bone);
+  color: #000;
+  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* CardSwap: a deck that deals itself. Positioned in its own box instead of upstream's bottom-right corner. */
+.vq-swap {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.vq-swap .card-swap-container {
+  bottom: 0;
+  right: auto;
+  left: 50%;
+  transform: translate(-58%, 0);
+  transform-origin: bottom center;
+}
+.vq-swap .card-swap-card.vq-swap__card {
+  border-radius: 0;
+  border: 1px solid var(--hairline-strong);
+  background: var(--black);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 1);
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: default;
+}
+@media (max-width: 768px) {
+  .vq-swap .card-swap-container {
+    transform: translate(-56%, 0) scale(0.78);
+  }
+}
+@media (max-width: 480px) {
+  .vq-swap .card-swap-container {
+    transform: translate(-54%, 0) scale(0.66);
+  }
+}
+.vq-swap-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+.vq-swap-list > li {
+  border: 1px solid var(--hairline-strong);
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Lanyard: the pass hanging in the dark */
+.vq-lanyard {
+  position: relative;
+  width: 100%;
+}
+.vq-lanyard .lanyard {
+  background: transparent;
+}
+
+/* Magnet: upstream pins its wrapper inline-block in an inline style */
+.vq-pull--block {
+  display: block !important;
+}
+

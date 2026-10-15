@@ -1,0 +1,39 @@
+{
+  "name": "@velvique/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "abi/index.ts",
+  "types": "abi/index.ts",
+  "exports": {
+    ".": "./abi/index.ts"
+  },
+  "scripts": {
+    "build": "hardhat build",
+    "test": "hardhat test",
+    "test:sol": "hardhat test solidity",
+    "coverage": "hardhat test --coverage",
+    "deploy:sepolia": "hardhat ignition deploy ignition/modules/Velvique.ts --network baseSepolia --parameters ignition/parameters.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "deploy:membership:sepolia": "hardhat ignition deploy ignition/modules/Membership.ts --network baseSepolia --parameters ignition/membership.json"
+  },
+  "dependencies": {
+    "viem": "^2.57.2"
+  },
+  "devDependencies": {
+    "hardhat": "^3.18.1",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.7",
+    "@nomicfoundation/hardhat-ignition": "^3.1.8",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.1.6",
+    "@nomicfoundation/hardhat-viem": "^3.0.4",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.0",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.0",
+    "@nomicfoundation/hardhat-keystore": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.0",
+    "@nomicfoundation/ignition-core": "^3.1.8",
+    "@openzeppelin/contracts": "5.6.1",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.7",
+    "typescript": "^5.9.3"
+  }
+}

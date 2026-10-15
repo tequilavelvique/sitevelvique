@@ -1,0 +1,26 @@
+{
+  "name": "velvique",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "content"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @velvique/web",
+    "build": "npm run build -w @velvique/web",
+    "lint": "npm run lint -w @velvique/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "check:persistence": "node scripts/check-no-persistence.mjs",
+    "check:copy": "node scripts/check-copy.mjs",
+    "contracts:build": "npm run build -w @velvique/contracts",
+    "contracts:test": "npm run test -w @velvique/contracts"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "overrides": {
+    "@wagmi/connectors": "6.2.0",
+    "@wagmi/core": "2.22.1"
+  }
+}

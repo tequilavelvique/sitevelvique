@@ -1,0 +1,745 @@
+{
+  "meta": {
+    "title": "Velvique · Añejo cristalino",
+    "description": "Velvique: a smooth and silky tequila, made exclusively with pure and 100% Mexican agave, with passion and dedication in Mexico. Born from three friends' idea at an electronic music festival in Croatia, for those who enjoy the moment and the good life."
+  },
+  "nav": {
+    "menu": "Menu",
+    "close": "Close",
+    "n1": "The Night",
+    "n2": "The Bottle",
+    "n3": "The After",
+    "n4": "Access",
+    "n5": "Store",
+    "n6": "Wholesale",
+    "n7": "Verify bottle",
+    "n8": "The bottle on your table",
+    "pass": "Pass",
+    "n9": "Journal",
+    "n10": "Events",
+    "n11": "Members"
+  },
+  "gate": {
+    "h": "Before you enter the night.",
+    "where": "Where are you?",
+    "ageQ": "Are you {n} or older?",
+    "ageQany": "Are you of legal drinking age in your country?",
+    "yes": "Yes, enter",
+    "no": "No",
+    "den_h": "The night will wait.",
+    "den_p": "Come back when you are of legal drinking age where you live.",
+    "legal": "Enjoy responsibly. We don’t store this answer."
+  },
+  "noche": {
+    "h_ts": "11:48 PM · Arrival",
+    "h_scroll": "Scroll to piece the night back together",
+    "m1a": "Us:",
+    "m1b": "something chill",
+    "m1c": "see you at the after",
+    "m2a": "Him: I work tomorrow",
+    "m2b": "Velvique: tomorrow?",
+    "e_ts": "12:30 AM · Evidence 01",
+    "a_ts": "2:10 AM · The after",
+    "a_h": "Nobody posed. Everyone showed up.",
+    "a_pile": "Photos from the after",
+    "a_hint": "Drag the top photo away, or tap it, to see the next one.",
+    "b_ts": "4:00 AM · Lights out",
+    "b_h": "The label is the light.",
+    "b_p": "Añejo cristalino of pure, 100% Mexican agave. Rested in oak, then charcoal-filtered until clear. Smooth and silky, full-bodied, slightly dangerous.",
+    "k1": "Type",
+    "v1": "Añejo cristalino tequila",
+    "k2": "Process",
+    "v2": "Oak, then charcoal",
+    "k3": "Notes",
+    "v3": "Silky, rounded",
+    "k4": "Serve",
+    "v4": "Lightly chilled",
+    "l_ts": "5:30 AM · What was left",
+    "l_h": "The evidence.",
+    "g_t": "List · Door 2",
+    "g_gdl": "The Guadalajara crew",
+    "g_late": "Daniela (running late)",
+    "o1": "Guest list",
+    "w_t": "Entry · 03.10",
+    "w_c": "Wristband, still on",
+    "r1": "1 × Añejo cristalino 700 ml",
+    "r2": "Ice, one large cube",
+    "r3": "Glasses",
+    "r_total": "We don’t remember",
+    "r_ts": "5:12 AM · Table 4",
+    "o3": "Receipt, table 4",
+    "o4": "The witness. Kosher, organic, NOM.",
+    "d_ts": "6:12 AM · The bottle is still lit",
+    "d_h": "Sold by invitation only.",
+    "d_p": "If someone sent you a link or you scanned a code at the party, redeem it here.",
+    "cta": "Redeem invitation",
+    "scan": "Scan code"
+  },
+  "memes": [
+    [
+      "Us: something chill",
+      "Velvique: see you at the after"
+    ],
+    [
+      "Him: I work tomorrow",
+      "Velvique: tomorrow?"
+    ],
+    [
+      "Her: just one",
+      "Velvique: it’s 4 AM"
+    ],
+    [
+      "The group: who’s driving?",
+      "Velvique: Uber, babe"
+    ],
+    [
+      "Me: leaving early",
+      "Velvique: sunrise"
+    ]
+  ],
+  "footer": {
+    "f1": "The bottle",
+    "f2": "The after",
+    "f3": "Verify bottle",
+    "f4": "Wholesale",
+    "f5": "The bottle on your table",
+    "tag": "Made with passion and dedication in Mexico.",
+    "creds": "Kosher · Organic · NOM certified",
+    "legal": "Enjoy responsibly. Legal drinking age only."
+  },
+  "acceso": {
+    "s1": "Access · 1 of 3",
+    "s1h": "You have an invitation.",
+    "s1h_none": "Did someone invite you?",
+    "pass": "Pass",
+    "passName": "Guest · Batch 03",
+    "signed": "From Velvique. Personal.",
+    "orCode": "Or enter your code",
+    "redeem": "Redeem",
+    "badCode": "That code doesn’t open this door.",
+    "expired": "This invitation has expired.",
+    "used": "This invitation was already used.",
+    "s2": "Access · 2 of 3",
+    "s2h": "Create your key.",
+    "s2p": "No email, no password. Your key lives on this phone and your address is your identity.",
+    "passkey": "Use passkey",
+    "wallet": "Use another account",
+    "s3": "Access · 3 of 3",
+    "s3h": "Preparing your pass…",
+    "s3p": "No cost to you. Takes a few seconds.",
+    "in": "You’re in",
+    "passT": "Pass",
+    "nonT": "Non-transferable",
+    "lotBase": "Velvique",
+    "s4p": "Your pass opens the store. Every order is recorded and your shipping address travels protected.",
+    "toStore": "Enter the store",
+    "back": "Back to The Night",
+    "failed": "That didn't go through. Try again.",
+    "scan_hint": "Open your phone camera and point it at the code: it will bring you here.",
+    "type_code": "Type code",
+    "cancel": "Cancel"
+  },
+  "tiers": {
+    "0": "No pass",
+    "1": "Guest",
+    "2": "Member",
+    "3": "Wholesale"
+  },
+  "botella": {
+    "ts": "4:00 AM · The bottle",
+    "h": "The label is the light.",
+    "lede": "Tall, black, faceted, with an electric blue label. It doesn't ask for attention. It was designed to earn it.",
+    "story_t": "The story",
+    "story_h": "Three friends, one festival, and no good tequila to drink.",
+    "story_p": "Once upon a time there were three friends, who were lovers of electronic music and were always looking for new experiences to enjoy to the fullest. One weekend, they decided to attend a famous electronic music festival in Croatia, known for its vibrant and energetic atmosphere.",
+    "story": [
+      [
+        "I",
+        "Croatia",
+        "The festival",
+        "During the festival, the friends encountered a small inconvenience: there was no good tequila to drink. As true lovers of this spirit, they were disappointed and decided it was time to take matters into their own hands."
+      ],
+      [
+        "II",
+        "Croatia",
+        "The idea",
+        "It was then that, in the middle of a drunken state and with the music ringing in their ears, they came up with a bold idea: create their own tequila. But not just any tequila, but one that met the highest quality standards and was exclusive for those who enjoyed the moment and enjoyed the good life."
+      ],
+      [
+        "III",
+        "Cap",
+        "The outlaw",
+        "Determined to carry out their plan, the friends sought the guidance of someone who knew the world of tequila in depth. It was then that they met Cap, a Mexican outlaw who had an excessive passion for tequila and partying with beautiful girls."
+      ],
+      [
+        "IV",
+        "Cap",
+        "The teacher",
+        "Cap taught them everything he knew about the tequila making process, from the planting of the agave to the final distillation. The friends immersed themselves in the world of tequila, learning about the different varieties, flavors and aromas that characterized it."
+      ],
+      [
+        "V",
+        "Mexico",
+        "The craft",
+        "With the knowledge gained, this 3 amigos began their journey to create their own brand of tequila. They partnered with local farmers in Mexico to source the purest, highest quality agave. They took care of every detail of the distillation process, making sure every drop of tequila was perfect."
+      ],
+      [
+        "VI",
+        "Velvique",
+        "The name",
+        "After years of hard work, they finally launched their tequila brand: \"Velvique\". A smooth and silky tequila, made exclusively with pure and 100% Mexican agave. It was a spirit that could be enjoyed by both young people and adults with a discerning palate and a sense of good taste."
+      ],
+      [
+        "VII",
+        "Velvique",
+        "The table",
+        "The \"Velvique\" brand quickly gained popularity among tequila lovers. Their unique flavor and exceptional quality made them stand out in the industry. Soon, his tequila became the preferred drink at parties and exclusive events, where the good life and enjoying the moment were paramount."
+      ],
+      [
+        "VIII",
+        "Cap",
+        "The ambassador",
+        "The friends achieved their goal of creating an exceptional tequila and shared their success with cap, who became their official ambassador. Together, they enjoyed life, music and beautiful girls, always toasting with Velvique, the silky elixir of pure agave, made with passion and dedication in Mexico."
+      ]
+    ],
+    "story_end": "And so, the story of this three amigos and Cap teaches us that sometimes, the best ideas arise at the most unexpected moments. With determination and passion, they managed to create something velvet and unique, leaving a mark on the tequila industry and in the hearts of those who enjoy the good life.",
+    "liquid_t": "The liquid",
+    "liquid_p": "Añejo cristalino tequila of pure, 100% Mexican agave from local farmers in Mexico. Rested in oak barrels, then charcoal-filtered to strip the color, not the character: a cristalino with depth, smooth and silky.",
+    "process_t": "Process",
+    "process": [
+      [
+        "I",
+        "Agave",
+        "Pure Mexican agave from local farmers, slow-cooked."
+      ],
+      [
+        "II",
+        "Oak",
+        "Barrel-rested to añejo."
+      ],
+      [
+        "III",
+        "Charcoal",
+        "Filtered until clear as water."
+      ],
+      [
+        "IV",
+        "Bottle",
+        "Black faceted glass, a label with its own light."
+      ]
+    ],
+    "notes_t": "Tasting notes",
+    "notes": [
+      [
+        "Nose",
+        "Vanilla, soft caramel, cooked agave."
+      ],
+      [
+        "Palate",
+        "Smooth and silky, full-bodied. Quiet oak."
+      ],
+      [
+        "Finish",
+        "Long and clean. Slightly dangerous."
+      ]
+    ],
+    "certs_t": "Certifications",
+    "certs": [
+      [
+        "Kosher",
+        "Made to kosher standards: trust, and more tables where it can be poured."
+      ],
+      [
+        "Organic",
+        "Careful production and a cleaner premium proposition."
+      ],
+      [
+        "NOM",
+        "Meets Mexico's official tequila standard. Verified legitimacy."
+      ]
+    ],
+    "led_t": "The light",
+    "led_p": "The label lights the monogram and the name. It breathes slowly, like a candle. It doesn’t flicker, doesn’t change color, isn’t for the dance floor: it’s for the table.",
+    "serve_t": "Rituals",
+    "serve": [
+      [
+        "Neat",
+        "Lightly chilled. It brings out the silkiness and the long finish."
+      ],
+      [
+        "Cocktails",
+        "Crisp, balanced serves where Velvique stays present, not buried."
+      ],
+      [
+        "Centerpiece",
+        "Turn off the table light. Let the bottle do the rest."
+      ]
+    ],
+    "unbox_t": "The opening",
+    "unbox_p": "Rigid black box, magnetic close, the bottle lying on velvet. Lift it and it lights up. Underneath, the card with your bottle’s code.",
+    "ar_cta": "Put it on your table",
+    "verify_cta": "Verify a bottle"
+  },
+  "after": {
+    "ts": "2:10 AM · Archive",
+    "h": "Nobody posed. Everyone showed up.",
+    "p": "Flash photos from nights that already happened. If you’re in one, congratulations: you were there.",
+    "events_t": "Upcoming nights",
+    "events_empty": "The next night is announced by invitation.",
+    "frame": "No."
+  },
+  "tienda": {
+    "ts": "Store · Pass only",
+    "h": "The store.",
+    "locked_h": "This door asks for a pass.",
+    "locked_p": "The store only opens for people who were invited.",
+    "connect": "Connect wallet",
+    "redeem": "Redeem invitation",
+    "not_deployed": "The catalog isn’t onchain on this network yet.",
+    "empty": "No bottles available right now.",
+    "price": "Price",
+    "left": "Left",
+    "soldout": "Sold out",
+    "limit": "Max per pass",
+    "tier": "Required pass",
+    "region_blocked": "We don’t ship this product to your region.",
+    "buy": "Order",
+    "qty": "Quantity",
+    "ship_t": "Shipping",
+    "ship_p": "Your address is encrypted in this browser before it leaves. Only whoever packs your order can read it, and it is deleted on delivery.",
+    "f_name": "Name",
+    "f_line1": "Street and number",
+    "f_line2": "Apt, neighborhood",
+    "f_city": "City",
+    "f_state": "State",
+    "f_zip": "Postal code",
+    "f_country": "Country",
+    "f_phone": "Phone for delivery",
+    "pay_t": "Payment",
+    "rail_a": "USDC on Base",
+    "rail_b": "Another token on Base",
+    "rail_c": "Card (US)",
+    "rail_d": "Card (Mexico and LATAM)",
+    "rail_d_soon": "Soon",
+    "total": "Total",
+    "pay": "Pay",
+    "step_seal": "Encrypting address…",
+    "step_upload": "Storing encrypted envelope…",
+    "step_permit": "Sign the USDC permit…",
+    "step_swap": "Swapping to USDC…",
+    "step_onramp": "Complete the card payment…",
+    "step_tx": "Recording order on Base…",
+    "done": "Order recorded.",
+    "see_order": "See order",
+    "error": "Something failed. Nothing was charged that isn’t onchain.",
+    "insufficient": "Not enough USDC.",
+    "close": "Close",
+    "f_email": "Email (required by the card provider, we don't store it)"
+  },
+  "pedido": {
+    "ts": "Order",
+    "h": "Order No. {id}",
+    "not_found": "That order doesn’t exist on this network.",
+    "owner_only": "Connect the wallet that placed this order to see the details.",
+    "status": {
+      "0": "Placed",
+      "1": "Paid",
+      "2": "Packing",
+      "3": "Shipped",
+      "4": "Delivered",
+      "5": "Claimed",
+      "6": "Refunded"
+    },
+    "amount": "Amount",
+    "sku": "Product",
+    "qty": "Quantity",
+    "receipt": "Onchain receipt",
+    "proof": "Proof",
+    "tx": "Transaction",
+    "shipping": "Encrypted shipping",
+    "shipping_gone": "Deleted after delivery"
+  },
+  "verificar": {
+    "ts": "Verify a bottle",
+    "kicker": "Authenticity",
+    "h": "Is your bottle authentic?",
+    "lede": "Every Velvique bottle leaves with a unique serial number, printed on the card that sits under the bottle. That number goes into a public record nobody can erase or alter, not even us. Type it here and in seconds you'll know whether what you're holding is Velvique.",
+    "input": "Serial number from the card",
+    "input_hint": "You'll find it on the card under the bottle when you open the box.",
+    "go": "Verify",
+    "how_t": "How it works",
+    "how": [
+      [
+        "I",
+        "At bottling",
+        "Every bottle gets its own serial number. No two are alike."
+      ],
+      [
+        "II",
+        "At sale",
+        "That number is recorded next to the real order the bottle came from."
+      ],
+      [
+        "III",
+        "In your hands",
+        "You check it here. No account, no sign-up, no asking anyone's permission."
+      ]
+    ],
+    "why_t": "Why it matters",
+    "why_p": "Premium spirits get counterfeited: refilled bottles, copied labels, reused boxes. Usually the only guarantee is the word of whoever sells it to you. With Velvique the proof is public and permanent: anyone can check it, today or ten years from now, at a party or at a bar.",
+    "see_t": "What you'll see",
+    "see": [
+      [
+        "Whether it's authentic",
+        "If the number exists in Velvique's record."
+      ],
+      [
+        "Where it came from",
+        "The order the bottle belongs to."
+      ],
+      [
+        "Whether it has an owner",
+        "If the buyer has already registered it in their name."
+      ]
+    ],
+    "faq_t": "Questions",
+    "faq": [
+      [
+        "Do I need an account?",
+        "No. Verifying is open to anyone: all you need is the number on the card."
+      ],
+      [
+        "What is that public record?",
+        "Technically it's a blockchain record: a public database no single party controls and that can't be edited after the fact. That's why the proof doesn't depend on us."
+      ],
+      [
+        "What does registering it in my name mean?",
+        "If you placed the order, once it arrives you can register the bottle in your name. It leaves a record that it's yours."
+      ],
+      [
+        "What if it doesn't show up?",
+        "Don't open it. Tell the place you bought it from and message us on our socials with a photo of the card."
+      ]
+    ],
+    "ok_h": "Authentic bottle.",
+    "ok_p": "This number is in Velvique's record and came from a real order. What you're holding is Velvique.",
+    "no_h": "We couldn't find it.",
+    "no_p": "This number isn't in the record. Check you typed it exactly as on the card. If it still doesn't show up, don't open it and message us on our socials with a photo of the card.",
+    "claimed": "Already registered to its owner.",
+    "unclaimed": "Not registered to anyone yet.",
+    "claim": "Register it in my name",
+    "claim_p": "Only the person who placed the order can register it, and only after receiving it.",
+    "claimed_ok": "Done. It's registered in your name.",
+    "serial": "Serial",
+    "order": "Order",
+    "not_deployed": "The bottle registry opens with the first production run. Keep your bottle's card: you'll check it here.",
+    "again": "Verify another bottle",
+    "how_link": "How it works"
+  },
+  "mayoreo": {
+    "ts": "Wholesale",
+    "h": "For other people’s tables.",
+    "lede": "Bars, clubs, hotels and distributors. Your bar doesn't compete for shelf space: it competes on curation. Velvique becomes the venue's signature, not another bottle on the back bar.",
+    "story_p": "Your crowd, 21 to 50, doesn't just drink: it buys experience, status and story. Velvique sits next to the champagne, not the shots, and a lit bottle on the table is the best advertising a venue has.",
+    "creds": "Kosher · Organic · NOM certified",
+    "offer_t": "The proposal",
+    "offer_h": "We don't sell you a product. We build a partnership.",
+    "offer": [
+      [
+        "01",
+        "Menu co-creation",
+        "Signature cocktails shaped to your bar's style, ready to execute without feeling forced."
+      ],
+      [
+        "02",
+        "Mood activation",
+        "Presentation materials and a service script so your team sells Velvique naturally."
+      ],
+      [
+        "03",
+        "Exclusive presence",
+        "Together we define where, when and how the bottle is pushed: a decision, not inventory."
+      ],
+      [
+        "04",
+        "Content and conversation",
+        "Activation ideas for reels and photo moments, so the bottle travels beyond the bar."
+      ]
+    ],
+    "formats_t": "Formats",
+    "formats": [
+      [
+        "700 ml",
+        "Case of 6 · individual gift box"
+      ],
+      [
+        "700 ml · table service",
+        "Case of 6 · presentation base"
+      ],
+      [
+        "Limited edition",
+        "By allocation"
+      ]
+    ],
+    "moq_t": "Minimum order",
+    "moq_p": "From 2 cases for venues. Regional distribution by agreement.",
+    "regions_t": "Regions",
+    "regions_p": "Mexico first. United States and Europe subject to confirmed import licenses.",
+    "pricing_t": "Volume pricing",
+    "pricing_locked": "Wholesale prices are visible with the Wholesale Pass.",
+    "pricing_open": "Your Wholesale Pass is active. Case prices now show in the store.",
+    "form_t": "Inquiry",
+    "form_p": "Your request goes straight to the Velvique team. We reply by email within a few days.",
+    "f_venue": "Venue or company name",
+    "f_kind": "Type",
+    "kinds": [
+      "Bar or club",
+      "Restaurant",
+      "Hotel",
+      "Distributor",
+      "Event"
+    ],
+    "f_city": "City and country",
+    "f_volume": "Cases per month (approx.)",
+    "f_note": "Anything else",
+    "send": "Send request",
+    "sent": "Request sent. We'll write to the email you left us soon.",
+    "f_name": "Your name",
+    "f_email": "Email",
+    "f_phone": "Phone (optional)",
+    "sending": "Sending…",
+    "error": "Couldn't send. Try again in a moment."
+  },
+  "ar": {
+    "ts": "On your table",
+    "kicker": "Experience",
+    "h": "Put it on your table.",
+    "p": "With your phone's camera, the bottle appears in front of you at real size: on your table, your bar, wherever you want. Turn it, get close, turn off the lights.",
+    "place": "Open camera",
+    "flash": "Take a flash photo",
+    "share": "Share",
+    "retake": "Again",
+    "unsupported": "On a computer you can turn it here with your mouse. To see it on your table, open this page on your phone.",
+    "drag": "Drag to turn it",
+    "steps_t": "How it works",
+    "steps": [
+      [
+        "01",
+        "Open the camera",
+        "Tap the button and allow camera access. Nothing to install."
+      ],
+      [
+        "02",
+        "Point at a table",
+        "Move your phone slowly over a flat surface until the bottle appears."
+      ],
+      [
+        "03",
+        "Turn off the lights",
+        "Watch the label light up. Take the flash photo and share it."
+      ]
+    ],
+    "camera_phone": "The camera opens from your phone. Open this same page on your phone and tap Open camera.",
+    "video": "Record video",
+    "stop": "Stop",
+    "recording": "Recording",
+    "video_unsupported": "Your browser can't record video here. Try the photo.",
+    "download": "Download",
+    "loading": "Loading the bottle…"
+  },
+  "wallet": {
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "wrong_chain": "Switch to Base",
+    "connected": "Connected"
+  },
+  "diario": {
+    "ts": "Journal",
+    "h": "What got said after.",
+    "lede": "Notes, chronicles and evidence from the nights. Some entries only read from the other side of the door.",
+    "all": "All",
+    "members_badge": "Members",
+    "read": "Read",
+    "empty": "No entries yet.",
+    "back": "Back to the journal",
+    "locked_h": "This entry is for members.",
+    "locked_p": "Enter with your member wallet to read it in full.",
+    "unlock": "Enter as a member",
+    "min": "min",
+    "kinds": {
+      "cronica": "Chronicle",
+      "historia": "Story",
+      "guia": "Guide",
+      "nota": "Note",
+      "foto": "Photos"
+    },
+    "latest": "Latest",
+    "by": "By",
+    "share": "Share",
+    "copy_link": "Copy link",
+    "copied": "Link copied",
+    "more": "Keep reading",
+    "archive": "Archive",
+    "sub_t": "Get the journal",
+    "sub_p": "New entries reach members first. Become a member and they'll be waiting on the other side.",
+    "sub_cta": "Become a member"
+  },
+  "eventos": {
+    "ts": "Events",
+    "h": "The next nights.",
+    "upcoming": "Upcoming",
+    "past": "Already happened",
+    "empty": "The next night is announced by invitation.",
+    "members_badge": "Members",
+    "when": "When",
+    "where": "Where",
+    "details_locked": "Address and door time are shared with members only.",
+    "details_t": "For members",
+    "back": "Back to events",
+    "see": "See the night"
+  },
+  "miembros": {
+    "ts": "Members",
+    "h": "The other side of the door.",
+    "lede": "Journal entries, private nights and what isn't published outside. Your pass is your key.",
+    "connect": "Use another account",
+    "sign": "Enter",
+    "sign_note": "It only confirms this account is yours. It moves no money and isn't stored.",
+    "not_member_h": "You’re not on the list yet.",
+    "not_member_p": "If you have an invitation code, redeem it here.",
+    "code_label": "Invitation code",
+    "join": "Redeem code",
+    "joined": "You’re in.",
+    "bad_code": "That code doesn’t open this door.",
+    "used_code": "That code was already used.",
+    "tier": "Pass",
+    "articles": "Members journal",
+    "events": "Private nights",
+    "none": "Nothing yet. The next note is coming.",
+    "signout": "Leave",
+    "loading": "Opening…",
+    "error": "We couldn’t open this.",
+    "session_expired": "Your session expired. Sign in again.",
+    "door_social_t": "Sign in with your account",
+    "door_social_p": "Google, Apple or X. Nothing to install, nothing to remember.",
+    "door_wallet_t": "Prefer another account?",
+    "door_wallet_p": "If you already use a digital wallet, you can sign in with it too.",
+    "google": "Google",
+    "apple": "Apple",
+    "x": "X",
+    "wallet_sign": "Confirm and enter",
+    "link_t": "Link a social account",
+    "link_p": "Your membership is issued once your account has at least one linked social.",
+    "minting": "Preparing your pass…",
+    "membership_t": "Membership",
+    "token": "Personal · Non-transferable",
+    "linked": "Linked accounts",
+    "wallet": "Account",
+    "wallet_not_linked": "This account isn't linked to your pass.",
+    "link_wallet": "Link this account",
+    "identity_used": "You already have a pass on another account.",
+    "needs_social": "Link a social account to receive your membership.",
+    "not_configured": "Membership opens soon. Keep your code: you will redeem it here.",
+    "view_tx": "View receipt",
+    "claim": "Get membership",
+    "code_hint": "This stage is invitation only.",
+    "pass_t": "The pass",
+    "pass_h": "It isn't bought. It's given.",
+    "pass_p": "A pass in your name, personal and non-transferable. It opens the private nights, the full journal and the store. The first generations get in by invitation only.",
+    "perks_t": "What it opens",
+    "perks": [
+      [
+        "Private nights",
+        "Address and door time for members only. You are the list."
+      ],
+      [
+        "The full journal",
+        "Chronicles, photos and notes that aren't published outside."
+      ],
+      [
+        "The store",
+        "Your pass opens the store. Your shipping address travels protected."
+      ],
+      [
+        "Allocated editions",
+        "Limited bottles are allocated to members first."
+      ],
+      [
+        "Your bottle, verified",
+        "Check that every bottle you receive is authentic."
+      ],
+      [
+        "No passwords",
+        "Sign in with Google, Apple or X. No cost, no hassle."
+      ]
+    ],
+    "soon_badge": "Opening soon",
+    "gen": "Generation 01",
+    "soon_h": "The first generation is about to walk in.",
+    "soon_p": "Passes are issued by invitation, at the coming nights. If someone gave you a code, keep it: you will redeem it here.",
+    "soon_events": "See upcoming nights",
+    "soon_read": "Read the journal",
+    "card_holder": "Your name goes here"
+  },
+  "admin": {
+    "ts": "Admin",
+    "h": "Content",
+    "not_admin": "This wallet doesn’t administer Velvique.",
+    "connect": "Connect admin wallet",
+    "no_manifest_h": "No site manifest yet.",
+    "no_manifest_p": "Create the manifest on Grove. Then paste its URI into NEXT_PUBLIC_GROVE_SITE_URI and redeploy once.",
+    "create_manifest": "Create manifest",
+    "manifest_uri": "Manifest URI",
+    "tab_articles": "Journal",
+    "tab_events": "Events",
+    "tab_archive": "Archive",
+    "tab_media": "Media",
+    "tab_members": "Members",
+    "new": "New",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm_delete": "Confirm delete",
+    "save": "Save",
+    "saving": "Saving to Grove…",
+    "saved": "Published. The site updates within seconds.",
+    "cancel": "Cancel",
+    "error": "Grove rejected the change",
+    "f_slug": "Slug",
+    "f_title": "Title",
+    "f_excerpt": "Excerpt",
+    "f_body": "Body (markdown)",
+    "f_tags": "Tags, comma separated",
+    "f_access": "Access",
+    "f_status": "Status",
+    "f_date": "Date",
+    "f_cover": "Cover",
+    "f_summary": "Summary",
+    "f_starts": "Starts",
+    "f_city": "City",
+    "f_venue": "Venue (public)",
+    "f_private": "Members-only details (markdown)",
+    "f_private_address": "Exact address",
+    "f_time": "Time on the photo",
+    "f_meme": "Caption (two lines)",
+    "access_public": "Public",
+    "access_members": "Members",
+    "status_draft": "Draft",
+    "status_published": "Published",
+    "upload": "Upload",
+    "replace": "Replace",
+    "clear": "Remove",
+    "members_count": "Members onchain",
+    "members_add": "Grant pass",
+    "members_remove": "Revoke pass",
+    "members_tier": "Pass",
+    "sign_note": "Every change on Grove asks your admin wallet for a signature.",
+    "missing_key": "NEXT_PUBLIC_MEMBERS_PUBKEY is missing: members content can’t be encrypted.",
+    "members_role_missing": "This wallet has no ADMIN_ROLE on the contract: grant and revoke from the Safe.",
+    "members_not_deployed": "The membership contract isn’t configured (NEXT_PUBLIC_ACCESS_ADDRESS).",
+    "f_kind": "Kind",
+    "f_author": "Author",
+    "seed_t": "Starter articles",
+    "seed_p": "The journal shows these sample articles while Grove has none. Publish them so you can edit them here.",
+    "seed_publish": "Publish to Grove"
+  }
+}

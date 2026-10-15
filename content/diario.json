@@ -1,0 +1,262 @@
+[
+  {
+    "id": "seed-01",
+    "slug": "vinilo-roble-y-una-botella-encendida",
+    "kind": "cronica",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Vinilo, roble y una botella encendida",
+      "EN": "Vinyl, oak and a lit bottle"
+    },
+    "excerpt": {
+      "ES": "Una noche de listening bar: discos girando, nadie mirando el teléfono y una sola luz azul en la barra.",
+      "EN": "A listening-bar night: records spinning, nobody on their phone, and a single blue light on the bar."
+    },
+    "cover": "https://api.grove.storage/2505c54e5fc69875fe3753f1448636656010ac57f4ca2a618334b99a34c708b1",
+    "tags": [
+      "noches",
+      "música"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-10-04T23:30:00-06:00",
+    "body": {
+      "ES": "La regla de la casa era simple: nadie pide canciones. El que pone los discos decide, y la barra escucha.\n\nLlegamos temprano, cuando las bocinas todavía sonaban a madera y el techo parecía una lámina de ámbar. Sobre la barra de mármol, entre un libro abierto de portadas y una caja de discos, alguien colocó la botella. La etiqueta se encendió y la conversación bajó medio tono, como cuando alguien entra tarde a una función.\n\n## Lo que se sirvió\n\nSolo, ligeramente frío, en copa. Así se nota lo que el carbón no le quitó: el cuerpo sedoso, la vainilla, el agave cocido detrás. El roble aparece al final, discreto, como el bajo de una canción que no notas hasta que deja de sonar.\n\n![La barra antes de que llegara todo el mundo](https://api.grove.storage/3dd18a7f08fa540d89fe7bba85afd68f8b1f6c9f555868e67849940f389851c0)\n\n> Un buen disco y un buen añejo piden lo mismo: tiempo y silencio alrededor.\n\n## Lo que no se dijo\n\nNadie habló de la botella. No hizo falta. Cada que el disco cambiaba de lado, alguien servía otra ronda y la luz azul seguía ahí, quieta, haciendo lo suyo.\n\n:: Él: solo vengo a escuchar un disco\n:: Velvique: ya van tres lados",
+      "EN": "House rule was simple: no requests. Whoever is on the decks decides, and the bar listens.\n\nWe got there early, when the speakers still sounded like wood and the ceiling looked like a sheet of amber. On the marble bar, between an open book of album covers and a crate of records, someone set the bottle down. The label lit up and the conversation dropped half a tone, the way it does when someone walks into a show late.\n\n## What was poured\n\nNeat, lightly chilled, in a copita. That is how you notice what the charcoal did not take: the silky body, the vanilla, the cooked agave behind it. The oak shows up at the end, quiet, like the bass line you only notice when it stops.\n\n![The bar before everyone arrived](https://api.grove.storage/3dd18a7f08fa540d89fe7bba85afd68f8b1f6c9f555868e67849940f389851c0)\n\n> A good record and a good añejo ask for the same thing: time, and some quiet around them.\n\n## What went unsaid\n\nNobody talked about the bottle. No need. Every time the record flipped, someone poured another round and the blue light stayed put, doing its thing.\n\n:: Him: just here to hear one record\n:: Velvique: that was side three"
+    }
+  },
+  {
+    "id": "seed-02",
+    "slug": "azotea-1-40-am",
+    "kind": "foto",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Azotea, 1:40 AM",
+      "EN": "Rooftop, 1:40 AM"
+    },
+    "excerpt": {
+      "ES": "Un ensayo de fotos: la ciudad abajo, el techo calado arriba y dos botellas pasando de mano en mano.",
+      "EN": "A photo essay: the city below, a carved ceiling above, and two bottles going hand to hand."
+    },
+    "cover": "https://api.grove.storage/aed7fc9ab14807e719de233f47452f8449423ba64431c9e867e509d935b87c39",
+    "tags": [
+      "noches",
+      "fotos"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-09-27T01:40:00-06:00",
+    "body": {
+      "ES": "A esa hora la azotea ya no tiene invitados, tiene tripulación. La ciudad se ve abajo como un tablero apagado y el techo calado deja pasar una luz dorada que no alumbra nada.\n\nLas únicas luces que importan son dos etiquetas azules subiendo y bajando entre la gente.\n\n![Dos botellas, una sola dirección: arriba](https://api.grove.storage/0ce3b2e4016044bccd338dcecebb80b2f640f2c771a60aadb337ce0edebcc457)\n\n## Cómo se ve una noche desde adentro\n\nNo hay foto posada. Nadie pidió que bajaran la música para sacar la cámara. Las fotos salen movidas porque la noche se mueve, y la botella sale nítida porque es lo único que brilla.\n\n- La primera ronda fue solo, ligeramente frío.\n- La segunda, alguien la convirtió en highball con toronja.\n- La tercera ya nadie la recuerda, pero la foto sí.\n\n:: El grupo: una y nos vamos\n:: Velvique: 1:40 AM",
+      "EN": "At that hour the rooftop no longer has guests, it has a crew. The city sits below like a switched-off board and the carved ceiling lets through a gold light that lights nothing.\n\nThe only lights that matter are two blue labels rising and falling through the crowd.\n\n![Two bottles, one direction: up](https://api.grove.storage/0ce3b2e4016044bccd338dcecebb80b2f640f2c771a60aadb337ce0edebcc457)\n\n## What a night looks like from inside\n\nNo posed shots. Nobody asked to turn the music down for the camera. The photos come out blurred because the night moves, and the bottle comes out sharp because it is the only thing glowing.\n\n- The first round was neat, lightly chilled.\n- Someone turned the second into a grapefruit highball.\n- Nobody remembers the third, but the photo does.\n\n:: The group: one and we leave\n:: Velvique: 1:40 AM"
+    }
+  },
+  {
+    "id": "seed-03",
+    "slug": "tres-amigos-y-cap",
+    "kind": "historia",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Tres amigos, Cap y un tequila de terciopelo",
+      "EN": "Three amigos, Cap and a velvet tequila"
+    },
+    "excerpt": {
+      "ES": "De dónde viene Velvique: un festival en Croacia, ningún buen tequila para beber y una idea audaz.",
+      "EN": "Where Velvique comes from: a festival in Croatia, no good tequila to drink, and a bold idea."
+    },
+    "cover": null,
+    "tags": [
+      "marca",
+      "historia"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-09-20T12:00:00-06:00",
+    "body": {
+      "ES": "Velvique no empezó en una destilería. Empezó en un festival de música electrónica en Croacia, donde tres amigos, amantes de la música electrónica y siempre en busca de nuevas experiencias, se toparon con un pequeño inconveniente: no había un buen tequila para beber.\n\n## La idea\n\nEn plena borrachera y con la música zumbando en los oídos, se les ocurrió una idea audaz: crear su propio tequila. Uno que cumpliera los más altos estándares de calidad y fuera exclusivo para quienes disfrutan el momento y la buena vida.\n\n## Cap\n\nBuscaron la guía de alguien que conociera a fondo el mundo del tequila y conocieron a Cap, un forajido mexicano con una pasión desmedida por el tequila y por la fiesta con chicas hermosas. Cap les enseñó todo, desde la siembra del agave hasta la destilación final. Hoy es el embajador oficial de la marca.\n\n## El oficio\n\nSe asociaron con agricultores locales en México para conseguir el agave más puro y de la más alta calidad, y cuidaron cada detalle de la destilación para que cada gota fuera perfecta. Después de años de arduo trabajo nació Velvique: un tequila suave y sedoso, hecho exclusivamente con agave puro y 100 % mexicano.\n\n> A veces, las mejores ideas surgen en los momentos más inesperados.\n\n## Lo que no negociamos\n\n- **100% agave.** Puro y mexicano, sin atajos.\n- **Cada gota cuidada.** De la siembra a la destilación.\n- **Añejo de verdad.** Reposo en roble antes de cualquier filtrado.\n- **Certificaciones.** Kosher, orgánico y NOM: confianza que se puede verificar.\n\nLa historia completa está en La botella.",
+      "EN": "Velvique did not start in a distillery. It started at an electronic music festival in Croatia, where three friends, lovers of electronic music and always looking for new experiences, encountered a small inconvenience: there was no good tequila to drink.\n\n## The idea\n\nIn the middle of a drunken state and with the music ringing in their ears, they came up with a bold idea: create their own tequila. One that met the highest quality standards and was exclusive for those who enjoy the moment and the good life.\n\n## Cap\n\nThey sought the guidance of someone who knew the world of tequila in depth and met Cap, a Mexican outlaw with an excessive passion for tequila and partying with beautiful girls. Cap taught them everything, from the planting of the agave to the final distillation. Today he is the brand's official ambassador.\n\n## The craft\n\nThey partnered with local farmers in Mexico to source the purest, highest quality agave, and took care of every detail of the distillation so every drop was perfect. After years of hard work came Velvique: a smooth and silky tequila, made exclusively with pure and 100% Mexican agave.\n\n> Sometimes, the best ideas arise at the most unexpected moments.\n\n## What we do not negotiate\n\n- **100% agave.** Pure and Mexican, no shortcuts.\n- **Every drop looked after.** From planting to distillation.\n- **A real añejo.** Oak rest before any filtering.\n- **Certifications.** Kosher, organic and NOM: trust you can verify.\n\nThe full story is on La botella."
+    }
+  },
+  {
+    "id": "seed-04",
+    "slug": "como-servir-un-anejo-cristalino",
+    "kind": "guia",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Cómo servir un añejo cristalino",
+      "EN": "How to serve an añejo cristalino"
+    },
+    "excerpt": {
+      "ES": "Temperatura, copa y hielo: tres decisiones pequeñas que cambian todo el trago.",
+      "EN": "Temperature, glass and ice: three small decisions that change the whole pour."
+    },
+    "cover": null,
+    "tags": [
+      "guías",
+      "servir"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-09-13T18:00:00-06:00",
+    "body": {
+      "ES": "Un añejo cristalino se ve como un blanco y se toma como un añejo. Ese contraste es el chiste, y se pierde fácil si lo sirves como cualquier otra cosa.\n\n## Temperatura: ligeramente frío\n\nNi a temperatura de cuarto en pleno verano ni congelado. Ligeramente frío resalta lo sedoso y alarga el final. Demasiado frío lo apaga: el aroma se esconde y solo queda el golpe.\n\n## La copa\n\nUna copa tequilera o una copa de vino blanco pequeña. Lo importante es que cierre un poco arriba para concentrar el aroma. El caballito sirve para brindar, no para entender lo que estás tomando.\n\n## Hielo: uno grande o ninguno\n\nSi quieres hielo, que sea un solo cubo grande. Se derrite lento y abre el trago poco a poco. Los hielos chicos lo diluyen antes de que llegues a la mitad.\n\n## Cómo probarlo\n\n1. Míralo contra la luz. Claro como el agua, pero con cuerpo al girarlo.\n2. Huele sin meter la nariz completa: vainilla, caramelo suave, agave cocido.\n3. Un trago corto para preparar el paladar. El segundo es el que cuenta.\n\n:: Ella: ¿con limón y sal?\n:: Velvique: hoy no",
+      "EN": "An añejo cristalino looks like a blanco and drinks like an añejo. That contrast is the point, and it is easy to lose if you serve it like anything else.\n\n## Temperature: lightly chilled\n\nNot room temperature in the middle of summer, not frozen. Lightly chilled brings out the silkiness and stretches the finish. Too cold shuts it down: the aroma hides and only the hit is left.\n\n## The glass\n\nA tequila copita or a small white-wine glass. What matters is that it narrows a little at the top to hold the aroma. The shot glass is for toasting, not for understanding what you are drinking.\n\n## Ice: one big cube or none\n\nIf you want ice, make it one large cube. It melts slowly and opens the pour little by little. Small cubes water it down before you are halfway through.\n\n## How to taste it\n\n1. Hold it up to the light. Clear as water, but with body when you swirl it.\n2. Smell without diving in: vanilla, soft caramel, cooked agave.\n3. A short first sip to set the palate. The second one is the one that counts.\n\n:: Her: with lime and salt?\n:: Velvique: not tonight"
+    }
+  },
+  {
+    "id": "seed-05",
+    "slug": "tres-cocteles-donde-velvique-no-se-esconde",
+    "kind": "guia",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Tres cócteles donde Velvique no se esconde",
+      "EN": "Three cocktails where Velvique doesn't hide"
+    },
+    "excerpt": {
+      "ES": "Sirves limpios y balanceados: el tequila sigue presente, no sepultado.",
+      "EN": "Crisp, balanced serves: the tequila stays present, not buried."
+    },
+    "cover": null,
+    "tags": [
+      "guías",
+      "coctelería"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-09-06T19:00:00-06:00",
+    "body": {
+      "ES": "Un cristalino con cuerpo aguanta coctelería sin perder identidad. La regla es no taparlo: pocos ingredientes, buen hielo y medidas exactas.\n\n## 1. Highball de toronja\n\n- 45 ml de Velvique\n- 120 ml de refresco de toronja bien frío\n- Una pizca de sal en el vaso, no en el borde\n- Un cubo largo de hielo y una cáscara de toronja\n\nSe construye directo en el vaso. Es la paloma sin el ruido.\n\n## 2. Old fashioned de agave\n\n- 60 ml de Velvique\n- 5 ml de jarabe de agave\n- 2 golpes de amargo de naranja\n- Un cubo grande de hielo, cáscara de naranja\n\nSe mezcla en vaso con hielo, se cuela sobre el cubo grande y se perfuma con la cáscara. El roble del añejo hace el trabajo que normalmente hace el whisky.\n\n## 3. Cristalino tonic\n\n- 45 ml de Velvique\n- 120 ml de agua tónica seca\n- Hielo y una rodaja delgada de pepino\n\nFresco, largo, para la primera hora de la noche.\n\n> Si el tequila desaparece en el cóctel, sobra el cóctel o sobra el tequila.\n\nToma con calma y alterna con agua. La noche es larga.",
+      "EN": "A cristalino with body can handle cocktails without losing itself. The rule is not to bury it: few ingredients, good ice, exact measures.\n\n## 1. Grapefruit highball\n\n- 45 ml Velvique\n- 120 ml very cold grapefruit soda\n- A pinch of salt in the glass, not on the rim\n- One long ice spear and a grapefruit peel\n\nBuild it straight in the glass. It is the paloma without the noise.\n\n## 2. Agave old fashioned\n\n- 60 ml Velvique\n- 5 ml agave syrup\n- 2 dashes orange bitters\n- One large ice cube, orange peel\n\nStir over ice, strain onto the big cube and express the peel. The añejo's oak does the job whiskey usually does.\n\n## 3. Cristalino tonic\n\n- 45 ml Velvique\n- 120 ml dry tonic water\n- Ice and a thin slice of cucumber\n\nFresh and long, for the first hour of the night.\n\n> If the tequila disappears in the cocktail, either the cocktail or the tequila is unnecessary.\n\nPace yourself and alternate with water. The night is long."
+    }
+  },
+  {
+    "id": "seed-06",
+    "slug": "kosher-organico-nom",
+    "kind": "nota",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Kosher, orgánico, NOM: qué significa cada sello",
+      "EN": "Kosher, organic, NOM: what each seal means"
+    },
+    "excerpt": {
+      "ES": "Tres certificaciones en una botella, explicadas sin rodeos.",
+      "EN": "Three certifications on one bottle, explained plainly."
+    },
+    "cover": null,
+    "tags": [
+      "marca",
+      "certificaciones"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-08-30T12:00:00-06:00",
+    "body": {
+      "ES": "Los sellos en una botella suelen ser decoración. En la nuestra son promesas que alguien más verificó. Esto es lo que significa cada uno.\n\n## NOM\n\nLa Norma Oficial Mexicana del tequila define qué puede llamarse tequila: de dónde viene el agave, cómo se produce y cómo se etiqueta. Cumplirla es legitimidad. Ver el sello NOM es saber que lo que hay adentro es tequila de verdad, hecho en la zona y bajo las reglas.\n\n## Kosher\n\nSignifica que el proceso se revisa bajo estándares kosher: ingredientes, equipo y producción. Para muchas personas es un requisito; para un bar o un evento, amplía las mesas donde la botella puede servirse sin preguntas.\n\n## Orgánico\n\nHabla de cómo se cuida el origen: una producción más limpia, con atención al campo y al proceso. Resuena con quien quiere saber qué está tomando, no solo cuánto cuesta.\n\n## Por qué los tres\n\nPorque premium no debería ser una palabra en la etiqueta sino algo que se puede comprobar. Confianza, proceso y calidad verificada. Lo demás, el sabor, ya lo decides tú.",
+      "EN": "Seals on a bottle are usually decoration. On ours they are promises someone else checked. Here is what each one means.\n\n## NOM\n\nMexico's official tequila standard defines what can be called tequila: where the agave comes from, how it is produced and how it is labeled. Meeting it is legitimacy. Seeing the NOM seal means what is inside is real tequila, made in the region and by the rules.\n\n## Kosher\n\nIt means the process is reviewed to kosher standards: ingredients, equipment and production. For many people it is a requirement; for a bar or an event, it widens the tables where the bottle can be poured without questions.\n\n## Organic\n\nIt speaks to how the origin is cared for: cleaner production, with attention to the field and the process. It resonates with people who want to know what they are drinking, not just what it costs.\n\n## Why all three\n\nBecause premium should not be a word on a label but something you can check. Trust, process and verified quality. The rest, the taste, is your call."
+    }
+  },
+  {
+    "id": "seed-07",
+    "slug": "que-es-un-anejo-cristalino",
+    "kind": "nota",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Qué es un añejo cristalino",
+      "EN": "What an añejo cristalino is"
+    },
+    "excerpt": {
+      "ES": "Claro como un blanco, profundo como un añejo. Cómo se logra y por qué no es un truco.",
+      "EN": "Clear like a blanco, deep like an añejo. How it is done and why it is not a trick."
+    },
+    "cover": null,
+    "tags": [
+      "guías",
+      "tequila"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-08-23T12:00:00-06:00",
+    "body": {
+      "ES": "Primero es añejo. Después es cristalino. El orden importa.\n\n## Primero: añejo\n\nUn añejo es tequila que reposa en barricas de roble por lo menos un año. En ese tiempo la madera le da color ámbar, notas de vainilla y caramelo, y un cuerpo más redondo. Es la parte lenta y no tiene atajos.\n\n## Después: cristalino\n\nAl añejo terminado se le filtra, normalmente con carbón, hasta quitarle el color. El filtrado se lleva el tono ámbar y algunas notas más ásperas de la madera. Lo que se queda es lo que buscamos: la profundidad, la textura sedosa, el final largo.\n\n## Lo que no es\n\n- No es un blanco con sabor. El tiempo en roble ya ocurrió.\n- No es más ligero en carácter. Es más limpio en la vista.\n- No es una moda sin fondo. Es una forma de servir un añejo en lugares donde antes solo cabía un blanco.\n\n> Quitarle el color, no el carácter.\n\n## Por qué nos gusta\n\nPorque funciona en los dos mundos: solo, ligeramente frío, como un añejo serio, y en un highball donde un añejo ámbar se vería fuera de lugar. Un solo líquido para toda la noche.",
+      "EN": "First it is añejo. Then it is cristalino. The order matters.\n\n## First: añejo\n\nAn añejo is tequila rested in oak barrels for at least a year. In that time the wood gives it an amber color, notes of vanilla and caramel, and a rounder body. It is the slow part and there are no shortcuts.\n\n## Then: cristalino\n\nThe finished añejo is filtered, usually through charcoal, until the color is gone. Filtering takes the amber and some of the wood's rougher notes. What stays is what we are after: the depth, the silky texture, the long finish.\n\n## What it is not\n\n- It is not a flavored blanco. The time in oak already happened.\n- It is not lighter in character. It is cleaner to the eye.\n- It is not a hollow trend. It is a way to pour an añejo in places where only a blanco used to fit.\n\n> Strip the color, not the character.\n\n## Why we like it\n\nBecause it works in both worlds: neat and lightly chilled like a serious añejo, and in a highball where an amber añejo would look out of place. One liquid for the whole night."
+    }
+  },
+  {
+    "id": "seed-08",
+    "slug": "la-etiqueta-es-la-luz",
+    "kind": "historia",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "La etiqueta es la luz",
+      "EN": "The label is the light"
+    },
+    "excerpt": {
+      "ES": "Por qué la botella no pide atención: fue diseñada para merecerla.",
+      "EN": "Why the bottle doesn't ask for attention: it was designed to earn it."
+    },
+    "cover": "https://api.grove.storage/430e8b706f6a2eac303d07af29a8db32b793136e7e742ecb5637ff23be29fb89",
+    "tags": [
+      "marca",
+      "la botella"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-08-16T22:00:00-06:00",
+    "body": {
+      "ES": "En una mesa a las tres de la mañana casi todo está apagado. Por eso la etiqueta se enciende.\n\n## Una sola luz\n\nLa luz sale del monograma y del nombre, en azul eléctrico. Respira despacio, como una vela. No parpadea, no cambia de color, no sigue el ritmo de la música. No es para la pista: es para la mesa.\n\n## La botella como objeto\n\nAlta, negra, facetada. Una silueta alargada que se ve distinta en el estante, en la barra, en la mano. Moderna, premium y ligeramente peligrosa, en el mejor sentido.\n\n> Velvique no pide atención. Fue diseñada para merecerla.\n\n## Lo que pasa después\n\nPasa siempre igual: alguien levanta la botella para la foto, la etiqueta queda nítida aunque todo lo demás salga movido, y al día siguiente esa foto es la evidencia de que la noche existió.\n\n:: Nosotros: nada de fotos hoy\n:: Velvique: sonrían",
+      "EN": "On a table at three in the morning almost everything is dark. That is why the label lights up.\n\n## One light\n\nThe light comes from the monogram and the name, in electric blue. It breathes slowly, like a candle. It does not flicker, does not change color, does not follow the beat. It is not for the dance floor: it is for the table.\n\n## The bottle as an object\n\nTall, black, faceted. An elongated silhouette that reads differently on the shelf, on the bar, in the hand. Modern, premium and slightly dangerous, in the best way.\n\n> Velvique doesn't ask for attention. It was designed to earn it.\n\n## What happens next\n\nIt always goes the same way: someone lifts the bottle for the photo, the label comes out sharp even when everything else is blurred, and the next day that photo is the evidence the night happened.\n\n:: Us: no photos tonight\n:: Velvique: smile"
+    }
+  },
+  {
+    "id": "seed-09",
+    "slug": "despues-de-las-4",
+    "kind": "cronica",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Después de las 4",
+      "EN": "After 4"
+    },
+    "excerpt": {
+      "ES": "El after empieza cuando la noche oficial termina. Una crónica en rojo y casi a oscuras.",
+      "EN": "The after starts when the official night ends. A chronicle in red, almost in the dark."
+    },
+    "cover": "https://api.grove.storage/8e1592d294d55278bb7f97b6cf824f5e816d249b524d95ccc76fade847877063",
+    "tags": [
+      "noches",
+      "el after"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-08-09T04:00:00-06:00",
+    "body": {
+      "ES": "A las cuatro prenden las luces en todos lados menos aquí. Aquí las bajan.\n\nEl cuarto es rojo, el techo casi no existe y la música baja lo suficiente para que la gente vuelva a hablar. Es la hora de las confesiones cortas y de las decisiones que ya no se discuten.\n\n## Quién se queda\n\nLos que dijeron que se iban temprano. Los que llegaron de otra fiesta. El que no conoce a nadie y a las cinco ya es parte del grupo. La lista de la puerta dejó de importar hace dos horas.\n\n## Qué se toma\n\nA esta hora ya nadie quiere un cóctel complicado. Velvique solo, con un cubo grande de hielo, pasando de vaso en vaso. Suave para tomar, que es justo lo que pide el after.\n\n> Nadie posó. Todos salieron.\n\n## Cómo termina\n\nTermina igual que empezó: sin aviso. Alguien abre una puerta, entra luz de mañana y la etiqueta azul sigue encendida en la mesa como si la noche no supiera que ya se acabó.\n\n:: Yo: me voy temprano\n:: Velvique: amaneció",
+      "EN": "At four the lights come on everywhere except here. Here they go down.\n\nThe room is red, the ceiling barely exists and the music drops just enough for people to start talking again. It is the hour of short confessions and decisions nobody argues with anymore.\n\n## Who stays\n\nThe ones who said they were leaving early. The ones who came from another party. The one who knew nobody and by five is part of the group. The door list stopped mattering two hours ago.\n\n## What gets poured\n\nAt this hour nobody wants a complicated cocktail. Velvique neat, one large ice cube, going from glass to glass. Smooth to sip, which is exactly what the after asks for.\n\n> Nobody posed. Everybody showed up.\n\n## How it ends\n\nIt ends the way it started: without warning. Someone opens a door, morning light comes in, and the blue label is still lit on the table as if the night did not know it was over.\n\n:: Me: leaving early\n:: Velvique: it's sunrise"
+    }
+  },
+  {
+    "id": "seed-10",
+    "slug": "tu-bar-no-compite-por-un-anaquel",
+    "kind": "nota",
+    "author": "Redacción Velvique",
+    "title": {
+      "ES": "Tu bar no compite por un anaquel",
+      "EN": "Your bar doesn't compete for shelf space"
+    },
+    "excerpt": {
+      "ES": "Para bares, clubes y hoteles: por qué la curaduría pesa más que el volumen, y cómo trabajamos juntos.",
+      "EN": "For bars, clubs and hotels: why curation beats volume, and how we work together."
+    },
+    "cover": "https://api.grove.storage/3af3f9b232c011465b83196ec760f294376c5332b26f713de98359a37c7ff4b2",
+    "tags": [
+      "venues",
+      "mayoreo"
+    ],
+    "access": "public",
+    "status": "published",
+    "publishedAt": "2026-08-02T12:00:00-06:00",
+    "body": {
+      "ES": "La mayoría de los bares tienen las mismas marcas. Los que se distinguen no lo hacen por volumen, lo hacen por curaduría.\n\n## Tu audiencia\n\nEntre 21 y 50 años, de aquí y de fuera. No solo consume alcohol: consume experiencia, estatus e historia. Quiere pedir algo que no encuentra en cualquier lado y que se vea bien en la mesa.\n\n## La respuesta\n\nUn tequila con identidad. Uno que se vuelve firma del lugar, no solo otra botella en el estante. Velvique se coloca al lado del champán, no del shot, y una botella encendida en la mesa es la mejor publicidad que tiene un venue.\n\n## Cómo trabajamos\n\nNo te vendemos un producto. Construimos una colaboración.\n\n1. **Co-creación de menú.** Cócteles firma adaptados al estilo de tu barra, listos para ejecutar sin sonar forzados.\n2. **Activación de mood.** Materiales de presentación y guion de servicio para que tu equipo venda Velvique de forma natural.\n3. **Presencia exclusiva.** Definimos juntos dónde, cuándo y cómo se impulsa el producto: una decisión, no inventario.\n4. **Contenido y conversación.** Ideas para reels y momentos fotográficos, para que la botella trascienda la barra.\n\nSi tienes un lugar y esto te suena, la solicitud está en [Mayoreo](/mayoreo).",
+      "EN": "Most bars carry the same brands. The ones that stand out do not do it with volume, they do it with curation.\n\n## Your crowd\n\nBetween 21 and 50, local and from abroad. They do not just drink: they buy experience, status and story. They want to order something they cannot find anywhere, and that looks good on the table.\n\n## The answer\n\nA tequila with identity. One that becomes the venue's signature, not just another bottle on the back bar. Velvique sits next to the champagne, not the shots, and a lit bottle on the table is the best advertising a venue has.\n\n## How we work\n\nWe don't sell you a product. We build a partnership.\n\n1. **Menu co-creation.** Signature cocktails shaped to your bar's style, ready to execute without feeling forced.\n2. **Mood activation.** Presentation materials and a service script so your team sells Velvique naturally.\n3. **Exclusive presence.** Together we define where, when and how the bottle is pushed: a decision, not inventory.\n4. **Content and conversation.** Ideas for reels and photo moments, so the bottle travels beyond the bar.\n\nIf you run a venue and this sounds right, the application is on [Wholesale](/mayoreo)."
+    }
+  }
+]

@@ -1,0 +1,38 @@
+node_modules
+.next
+out
+.env
+.env.local
+*.tsbuildinfo
+packages/contracts/artifacts
+packages/contracts/cache
+packages/contracts/types
+packages/contracts/coverage
+packages/contracts/ignition/deployments
+
+# Raw shoot footage (about 600 MB). Kept on the USB copy, not in git; the site uses Grove links.
+/*.mp4
+
+# Media lives on Grove: source files stay on this machine, never in git.
+/*.jpg
+/*.jpeg
+/*.png
+/*.gif
+/*.webp
+/*.pdf
+/*.psd
+/*.glb
+/*.gltf
+/*.usdz
+/*.mov
+/*.ps1
+/phtd/
+apps/web/public/
+apps/web/app/*.png
+apps/web/app/*.ico
+apps/web/app/*.alt.txt
+
+# Local working notes, not part of the site.
+/AGENTS.md
+/CHANGELOG.md
+/docs/
