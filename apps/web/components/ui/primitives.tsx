@@ -42,15 +42,51 @@ export function Meme({ lines, style }: { lines: readonly string[]; style?: CSSPr
   );
 }
 
-export function LangToggle({ size = 11 }: { size?: number }) {
+export function LangToggle({ size = 14 }: { size?: number }) {
   const { lang, setLang } = useSite();
   return (
     <span style={{ display: "flex", gap: 2 }}>
       {(["ES", "EN"] as const).map((l) => (
-        <button key={l} type="button" className="lang-btn" style={{ fontSize: size }} aria-pressed={lang === l} onClick={() => setLang(l)}>
-          {l}
+        <button
+          key={l}
+          type="button"
+          className="lang-btn"
+          aria-label={l === "ES" ? "Español" : "English"}
+          title={l === "ES" ? "Español" : "English"}
+          aria-pressed={lang === l}
+          onClick={() => setLang(l)}
+        >
+          <Flag lang={l} height={size} />
         </button>
       ))}
     </span>
+  );
+}
+
+/** ES is Mexico, where the bottle is from; EN is the US. Drawn SVG, never emoji. */
+function Flag({ lang, height }: { lang: "ES" | "EN"; height: number }) {
+  return (
+    <svg className="lang-flag" viewBox="0 0 21 14" width={(height * 3) / 2} height={height} aria-hidden>
+      {lang === "ES" ? (
+        <>
+          <rect width="7" height="14" fill="#006847" />
+          <rect x="7" width="7" height="14" fill="#FFFFFF" />
+          <rect x="14" width="7" height="14" fill="#CE1126" />
+          <circle cx="10.5" cy="7" r="1.9" fill="#8C5A2B" />
+          <path d="M8.9 8.1q1.6 1.5 3.2 0" stroke="#006847" strokeWidth=".6" fill="none" />
+        </>
+      ) : (
+        <>
+          <rect width="21" height="14" fill="#FFFFFF" />
+          {[0, 2, 4, 6, 8, 10, 12].map((i) => (
+            <rect key={i} y={(i * 14) / 13} width="21" height={14 / 13} fill="#B22234" />
+          ))}
+          <rect width="8.6" height={(7 * 14) / 13} fill="#3C3B6E" />
+          {[1.4, 3.6, 5.8, 7.6].flatMap((x, c) =>
+            [1.4, 3.6, 5.8].map((y) => <circle key={`${c}${y}`} cx={x - (y === 3.6 ? 1.1 : 0)} cy={y} r=".45" fill="#FFFFFF" />),
+          )}
+        </>
+      )}
+    </svg>
   );
 }

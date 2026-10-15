@@ -35,7 +35,7 @@ export function Footer() {
       </nav>
       <div className="cond hairline-top" style={{ width: "100%", maxWidth: 1280, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 12, paddingTop: 16, fontSize: 12, letterSpacing: ".16em", color: "var(--muted)" }}>
         <span>{t.footer.legal}</span>
-        <LangToggle size={12} />
+        <LangToggle />
       </div>
     </footer>
   );

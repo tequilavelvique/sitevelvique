@@ -22,7 +22,7 @@ import { mediaUrl } from "@/lib/media";
 import type { MediaSlot } from "@velvique/content";
 import { Logo } from "@/components/chrome/Logo";
 
-/** How close the first photo starts inside the iris before it settles to fill the frame. */
+/** How close the first clip starts inside the iris before it settles to fill the frame. */
 const INSIDE_ZOOM = 1.6;
 
 export function LaNoche() {
@@ -60,11 +60,11 @@ export function LaNoche() {
       <Llegada />
 
       {/* II · Evidencia */}
-      {/* With motion on, this photo opens inside the hero's iris instead; shown here only for reduced motion. */}
+      {/* With motion on, this clip opens inside the hero's iris instead; shown here only for reduced motion. */}
       <NightSection time="12:30 AM" label="02 Evidencia" className="gutter section wrap stack evidencia-still" style={{ gap: 40 }}>
         <RuleRow left="II" right={<SplitText text={n.e_ts} />} />
         <div style={{ position: "relative", width: "100%", maxWidth: 820, margin: "0 auto", aspectRatio: "4/5" }}>
-          <Evidence slot="vq-flash-01" sizes="(max-width: 860px) 100vw, 820px" />
+          <Evidence slot="vq-night-crowd" sizes="(max-width: 860px) 100vw, 820px" />
           <Meme lines={[n.m2a, n.m2b]} />
         </div>
       </NightSection>
@@ -192,7 +192,7 @@ function Llegada() {
         .fromTo(q("[data-hero-rim]"), { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.06 }, 0.49)
         .to(q("[data-hero-rim]"), { autoAlpha: 0, duration: 0.14 }, 0.72)
         .set(q("[data-hero-bottle]"), { autoAlpha: 0 }, 0.86)
-        // Inside: the first photo of the night, shown in the iris. It starts close and settles to fill the frame as
+        // Inside: the first clip of the night, shown in the iris. It starts close and settles to fill the frame as
         // the iris reaches the edges, so the opening reads as a lens pushing through, never as a page scrolling.
         .fromTo(q("[data-hero-photo]"), { scale: INSIDE_ZOOM }, { scale: 1, duration: 0.36, ease: "power2.out" }, 0.49)
         .fromTo(q("[data-hero-meme]"), { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 0.1, ease: "power1.out" }, 0.8)
@@ -255,7 +255,7 @@ function Llegada() {
         <div data-hero-rim className="hero-rim" aria-hidden />
         <div data-hero-inside className="hero-inside">
           <div data-hero-photo className="hero-inside__photo">
-            <Evidence slot="vq-flash-01" sizes="100vw" flat />
+            <Evidence slot="vq-night-crowd" sizes="100vw" flat />
           </div>
           <div data-hero-meme className="gutter hero-inside__meme">
             <RuleRow left="II" right={n.e_ts} />
@@ -268,7 +268,7 @@ function Llegada() {
 }
 
 /*
- * III · El after: the prints from the night, thrown on the table. React Bits Stack: drag the top one away (or tap,
+ * III · El after: the prints from the night, thrown on the table, two of them still moving (silent clips). React Bits Stack: drag the top one away (or tap,
  * or arrow keys) and it goes under the pile; the frame number and time beside it follow whichever print is up.
  */
 function AfterStrip() {
@@ -276,8 +276,11 @@ function AfterStrip() {
   const n = t.noche;
   const frames: { slot: MediaSlot; time: string }[] = [
     { slot: "vq-after-1", time: "2:10 AM" },
+    { slot: "vq-night-booth", time: "2:24 AM" },
     { slot: "vq-after-2", time: "2:47 AM" },
+    { slot: "vq-flash-01", time: "3:02 AM" },
     { slot: "vq-after-3", time: "3:15 AM" },
+    { slot: "vq-night-dark", time: "3:31 AM" },
     { slot: "vq-after-4", time: "3:58 AM" },
   ];
   const [top, setTop] = useState(0);

@@ -47,6 +47,21 @@ html,
 body {
   margin: 0;
   background: var(--ink);
+  /* Never a sideways scroll at any width. `clip`, not `hidden`: it makes no scroll container, so sticky and
+     ScrollTrigger pins keep working, and iOS stops widening the layout viewport to fit a stray glow. */
+  max-width: 100%;
+  overflow-x: clip;
+}
+@supports not (overflow-x: clip) {
+  html {
+    overflow-x: hidden;
+  }
+}
+main,
+footer,
+section {
+  max-width: 100%;
+  overflow-x: clip;
 }
 body {
   background:
@@ -62,7 +77,6 @@ body {
   font-family: var(--font-serif), "Bodoni Moda", Didot, "Times New Roman", serif;
   font-weight: 400;
   font-optical-sizing: auto;
-  overflow-x: hidden;
 }
 
 a {
@@ -344,17 +358,30 @@ img {
 
 .lang-btn {
   min-height: 44px;
-  min-width: 30px;
+  min-width: 36px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 4px;
   background: none;
   border: 0;
   cursor: pointer;
-  font-family: var(--font-cond), "Barlow Condensed", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.24em;
-  color: var(--faint);
+  line-height: 0;
 }
-.lang-btn[aria-pressed="true"] {
-  color: var(--bone);
+.lang-flag {
+  display: block;
+  border-radius: 2px;
+  opacity: 0.38;
+  filter: saturate(0.4);
+  transition: opacity 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+.lang-btn:hover .lang-flag,
+.lang-btn:focus-visible .lang-flag {
+  opacity: 0.75;
+}
+.lang-btn[aria-pressed="true"] .lang-flag {
+  opacity: 1;
+  filter: none;
+  box-shadow: 0 0 0 1px var(--ink), 0 0 0 2px var(--bone);
 }
 
 .pill {
@@ -1310,7 +1337,7 @@ img {
 }
 .after-table__pile {
   justify-self: center;
-  width: min(74vw, 420px);
+  width: min(64vw, 420px);
   aspect-ratio: 3 / 4;
   margin-block: 24px 48px;
 }

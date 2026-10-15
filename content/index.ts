@@ -77,7 +77,10 @@ export type MediaSlot =
   | "vq-story-cap"
   | "vq-story-launch"
   | "vq-story-night"
-  | "vq-story-toast";
+  | "vq-story-toast"
+  | "vq-night-crowd"
+  | "vq-night-booth"
+  | "vq-night-dark";
 
 /** `poster` marks a video slot (an mp4 on Grove plus its still); those are set in the repo, not from /admin. */
 export type MediaEntry = { uri: string | null; poster?: string; alt: Record<Lang, string>; placeholder: Record<Lang, string> };
